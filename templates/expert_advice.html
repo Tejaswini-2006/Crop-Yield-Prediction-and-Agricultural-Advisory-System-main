@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+
+{% block title %}Expert Advice - Agricultural Experts{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-plant-primary">
+                    <i class="fas fa-user-graduate me-2"></i>Agricultural Experts
+                </h2>
+                <p class="text-muted">Get professional guidance from certified agricultural experts</p>
+            </div>
+        </div>
+        
+        <!-- Expert Categories -->
+        <div class="row mb-5">
+            <div class="col-md-4 mb-3">
+                <div class="card border-success h-100">
+                    <div class="card-header bg-success text-white text-center">
+                        <i class="fas fa-microscope fa-2x mb-2"></i>
+                        <h5>Crop Scientists</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Specialized in crop breeding, genetics, and variety development</p>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark me-1">Plant Breeding</span>
+                            <span class="badge bg-light text-dark me-1">Genetics</span>
+                            <span class="badge bg-light text-dark">Varieties</span>
+                        </div>
+                        <button class="btn btn-success">Consult Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+                <div class="card border-primary h-100">
+                    <div class="card-header bg-primary text-white text-center">
+                        <i class="fas fa-leaf fa-2x mb-2"></i>
+                        <h5>Soil Experts</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Experts in soil health, nutrition management, and fertility</p>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark me-1">Soil Testing</span>
+                            <span class="badge bg-light text-dark me-1">Fertility</span>
+                            <span class="badge bg-light text-dark">Nutrition</span>
+                        </div>
+                        <button class="btn btn-primary">Consult Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+                <div class="card border-warning h-100">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <i class="fas fa-bug fa-2x mb-2"></i>
+                        <h5>Plant Protection</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Specialists in pest management and disease control</p>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark me-1">IPM</span>
+                            <span class="badge bg-light text-dark me-1">Disease Control</span>
+                            <span class="badge bg-light text-dark">Pest Management</span>
+                        </div>
+                        <button class="btn btn-warning">Consult Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Featured Experts -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h4 class="text-plant-primary mb-4">Featured Experts</h4>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Expert">
+                        <h5>Dr. Rajesh Sharma</h5>
+                        <p class="text-muted">Senior Agronomist</p>
+                        <p class="small">25+ years experience in sustainable agriculture and crop management</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Rice Expert</span>
+                            <span class="badge bg-primary">Organic Farming</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">⭐ 4.9 (156 reviews)</small>
+                            <button class="btn btn-sm btn-outline-success">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Expert">
+                        <h5>Dr. Priya Patel</h5>
+                        <p class="text-muted">Plant Pathologist</p>
+                        <p class="small">Specialist in crop diseases and integrated pest management</p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning">Plant Protection</span>
+                            <span class="badge bg-info">IPM</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">⭐ 4.8 (89 reviews)</small>
+                            <button class="btn btn-sm btn-outline-success">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Expert">
+                        <h5>Dr. Suresh Kumar</h5>
+                        <p class="text-muted">Soil Scientist</p>
+                        <p class="small">Expert in soil fertility management and precision agriculture</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Soil Health</span>
+                            <span class="badge bg-secondary">Precision Farming</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">⭐ 4.7 (134 reviews)</small>
+                            <button class="btn btn-sm btn-outline-success">Book Session</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Consultation Form -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-success">
+                    <div class="card-header bg-success text-white text-center">
+                        <h5 class="mb-0">Quick Expert Consultation</h5>
+                        <small>Get answers to your urgent farming questions</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <i class="fas fa-clock me-2"></i>
+                            <strong>Response Time:</strong> Experts typically respond within 4-6 hours
+                        </div>
+                        
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Expertise Required</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select Expert Type</option>
+                                        <option value="crop">Crop Management</option>
+                                        <option value="soil">Soil & Nutrition</option>
+                                        <option value="protection">Plant Protection</option>
+                                        <option value="irrigation">Irrigation & Water</option>
+                                        <option value="market">Market & Economics</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Preferred Language</label>
+                                    <select class="form-select">
+                                        <option value="english">English</option>
+                                        <option value="hindi">Hindi</option>
+                                        <option value="regional">Regional Language</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Describe Your Problem</label>
+                                <textarea class="form-control" rows="4" 
+                                          placeholder="Provide detailed information about your farming issue..." required></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit for Expert Review
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

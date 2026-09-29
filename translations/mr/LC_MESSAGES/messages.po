@@ -1,0 +1,1906 @@
+# Marathi translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-11-04 12:10+0530\n"
+"PO-Revision-Date: 2025-11-04 12:17+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: mr\n"
+"Language-Team: mr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app.py:129
+#, python-format
+msgid "Predicted yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr "अपेक्षित पीक उत्पादन %(crop)s साठी: %(yield_pred)s हेक्टोग्राम/हेक्टर"
+
+#: app.py:140
+#, python-format
+msgid "Estimated yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr "अंदाजित पीक उत्पादन %(crop)s साठी: %(yield_pred)s हेक्टोग्राम/हेक्टर"
+
+#: app.py:175 app.py:181
+msgid "High"
+msgstr "जास्त"
+
+#: app.py:176 app.py:182
+msgid "Medium"
+msgstr "मध्यम"
+
+#: app.py:177 app.py:183
+msgid "Low"
+msgstr "कमी"
+
+#: app.py:181
+msgid "Apply fungicide, improve drainage, reduce plant density"
+msgstr "बुरशीनाशक वापरा, पाण्याचा निचरा सुधारा, लागवडीची घनता कमी करा"
+
+#: app.py:182
+msgid "Monitor crops closely, ensure proper ventilation"
+msgstr "पिकांवर बारकाईने लक्ष ठेवा, योग्य वायुवीजन सुनिश्चित करा"
+
+#: app.py:183
+msgid "Continue regular monitoring, maintain good practices"
+msgstr "नियमित देखरेख सुरू ठेवा, चांगल्या पद्धतींचा अवलंब करा"
+
+#: app.py:189
+msgid "Monitor regularly"
+msgstr "नियमित देखरेख करा"
+
+#: app.py:190
+#, python-format
+msgid "Disease risk level: %(risk_level)s"
+msgstr "रोग धोक्याची पातळी: %(risk_level)s"
+
+#: app.py:213
+msgid ""
+"Low rainfall expected. Consider drought-resistant crops and irrigation "
+"planning."
+msgstr "कमी पावसाची अपेक्षा आहे. दुष्काळ प्रतिरोधक पिके आणि सिंचनाचे नियोजन करा."
+
+#: app.py:215
+msgid "High rainfall expected. Ensure proper drainage and flood management."
+msgstr "जास्त पावसाची अपेक्षा आहे. पाण्याचा योग्य निचरा आणि पूर व्यवस्थापन सुनिश्चित करा."
+
+#: app.py:217
+msgid "Normal rainfall expected. Good conditions for most crops."
+msgstr "सामान्य पावसाची अपेक्षा आहे. बहुतेक पिकांसाठी चांगल्या परिस्थिती आहेत."
+
+#: app.py:225
+#, python-format
+msgid "Weather prediction for %(year)s: %(rainfall_pred)smm rainfall"
+msgstr "वर्ष %(year)s साठी हवामान अंदाज: %(rainfall_pred)s मिमी पाऊस"
+
+#: app.py:251
+msgid "Fertilizer recommendation generated successfully"
+msgstr "खत शिफारस यशस्वीरित्या तयार झाली"
+
+#: app.py:265
+msgid "Fertilizer recommendation generated successfully (estimated values)"
+msgstr "खत शिफारस यशस्वीरित्या तयार झाली (अंदाजित मूल्ये)"
+
+#: app.py:266
+msgid "Recommendations based on general agricultural guidelines"
+msgstr "सामान्य कृषी मार्गदर्शक तत्त्वांवर आधारित शिफारसी"
+
+#: app.py:271
+#, python-format
+msgid "Unable to generate recommendation: %(error)s"
+msgstr "शिफारस तयार करण्यात अक्षम: %(error)s"
+
+#: app.py:299
+msgid "Crop recommendations generated successfully"
+msgstr "पीक शिफारसी यशस्वीरित्या तयार झाल्या"
+
+#: app.py:334
+msgid "Your question has been posted successfully!"
+msgstr "तुमचा प्रश्न यशस्वीरित्या पोस्ट झाला आहे!"
+
+#: app.py:335
+msgid "2-4 hours"
+msgstr "२-४ तास"
+
+#: app.py:361
+#, python-format
+msgid "Found %(count)s farmers in your area"
+msgstr "तुमच्या परिसरात %(count)s शेतकरी सापडले"
+
+#: app.py:378
+msgid "Negotiable"
+msgstr "वाटाघाटी करता येईल"
+
+#: app.py:387
+msgid "Your listing has been posted successfully!"
+msgstr "तुमची सूची यशस्वीरित्या पोस्ट झाली आहे!"
+
+#: app.py:428
+msgid "Low rainfall: Increased fertilizer needs"
+msgstr "कमी पाऊस: खतांची वाढलेली गरज"
+
+#: app.py:433
+msgid "High rainfall: Reduced N&P, increased K for leaching prevention"
+msgstr "जास्त पाऊस: N आणि P कमी, K वाढवा (गळती टाळण्यासाठी)"
+
+#: app.py:438
+msgid "Normal rainfall: Standard fertilizer application"
+msgstr "सामान्य पाऊस: खतांचा मानक वापर"
+
+#: app.py:493
+#, python-format
+msgid "Apply %(n)skg/ha N, %(p)skg/ha P, %(k)skg/ha K for %(crop)s"
+msgstr "%(crop)s साठी %(n)s किग्रॅ/हेक्टर N, %(p)s किग्रॅ/हेक्टर P, %(k)s किग्रॅ/हेक्टर K चा वापर करा"
+
+#: app.py:509
+msgid "Apply all fertilizers as basal dose before sowing"
+msgstr "पेरणीपूर्वी सर्व खते बेसल डोस म्हणून वापरा"
+
+#: app.py:514
+msgid "50% N&K as basal, 50% N&K after 3-4 weeks. All P as basal."
+msgstr "५०% N आणि K बेसल म्हणून, ५०% N आणि K ३-४ आठवड्यांनंतर. सर्व P बेसल म्हणून."
+
+#: app.py:520
+msgid "40% N&K basal, 40% at 25 days, 20% at 45 days. All P basal."
+msgstr "४०% N आणि K बेसल, ४०% २५ दिवसांनी, २०% ४५ दिवसांनी. सर्व P बेसल."
+
+#: app.py:525
+msgid "Focus on P&K for flower/fruit development. Reduce N."
+msgstr "फुल/फळ विकासासाठी P आणि K वर लक्ष केंद्रित करा. N कमी करा."
+
+#: app.py:529
+msgid "Minimal fertilizer. Focus on K for fruit filling."
+msgstr "किमान खत. फळ भरण्यासाठी K वर लक्ष केंद्रित करा."
+
+#: app.py:541
+msgid "Urea (46% N)"
+msgstr "यूरिया (४६% N)"
+
+#: app.py:541
+msgid "Ammonium Sulphate (21% N)"
+msgstr "अमोनियम सल्फेट (२१% N)"
+
+#: app.py:541
+msgid "CAN (26% N)"
+msgstr "सीएएन (२६% N)"
+
+#: app.py:541
+msgid "DAP (18% N)"
+msgstr "डीएपी (१८% N)"
+
+#: app.py:543
+msgid "Nitrogen"
+msgstr "नत्र"
+
+#: app.py:549
+msgid "DAP (46% P2O5)"
+msgstr "डीएपी (४६% P2O5)"
+
+#: app.py:549
+msgid "SSP (16% P2O5)"
+msgstr "एसएसपी (१६% P2O5)"
+
+#: app.py:549
+msgid "TSP (46% P2O5)"
+msgstr "टीएसपी (४६% P2O5)"
+
+#: app.py:549
+msgid "Bone Meal (22% P2O5)"
+msgstr "बोन मील (२२% P2O5)"
+
+#: app.py:551
+msgid "Phosphorus"
+msgstr "स्फुरद"
+
+#: app.py:557
+msgid "MOP (60% K2O)"
+msgstr "एमओपी (६०% K2O)"
+
+#: app.py:557
+msgid "SOP (50% K2O)"
+msgstr "एसओपी (५०% K2O)"
+
+#: app.py:557
+msgid "Potash (50% K2O)"
+msgstr "पोटॅश (५०% K2O)"
+
+#: app.py:557
+msgid "Ash (5% K2O)"
+msgstr "राख (५% K2O)"
+
+#: app.py:559
+msgid "Potassium"
+msgstr "पोटॅशियम"
+
+#: app.py:579 app.py:886
+msgid "INR"
+msgstr "भारतीय रुपया"
+
+#: app.py:704
+#, python-format
+msgid "✓ Rainfall requirement met (%(min)s-%(max)smm)"
+msgstr "✓ पावसाची गरज पूर्ण झाली (%(min)s-%(max)s मिमी)"
+
+#: app.py:707
+#, python-format
+msgid "⚠ Rainfall slightly low (needs %(min)s-%(max)smm)"
+msgstr "⚠ पाऊस थोडा कमी आहे (गरज %(min)s-%(max)s मिमी)"
+
+#: app.py:710
+#, python-format
+msgid "⚠ Rainfall slightly high (optimal: %(min)s-%(max)smm)"
+msgstr "⚠ पाऊस थोडा जास्त आहे (इष्टतम: %(min)s-%(max)s मिमी)"
+
+#: app.py:717
+#, python-format
+msgid "✓ Temperature requirement met (%(min)s-%(max)s°C)"
+msgstr "✓ तापमानाची गरज पूर्ण झाली (%(min)s-%(max)s°C)"
+
+#: app.py:720
+#, python-format
+msgid "⚠ Temperature slightly low (needs %(min)s-%(max)s°C)"
+msgstr "⚠ तापमान थोडे कमी आहे (गरज %(min)s-%(max)s°C)"
+
+#: app.py:723
+#, python-format
+msgid "⚠ Temperature slightly high (optimal: %(min)s-%(max)s°C)"
+msgstr "⚠ तापमान थोडे जास्त आहे (इष्टतम: %(min)s-%(max)s°C)"
+
+#: app.py:729
+#, python-format
+msgid "✓ Suitable for %(soil_type)s soil"
+msgstr "✓ %(soil_type)s मातीसाठी उपयुक्त"
+
+#: app.py:732
+#, python-format
+msgid "⚠ Moderately suitable for %(soil_type)s soil"
+msgstr "⚠ %(soil_type)s मातीसाठी मध्यम उपयुक्त"
+
+#: app.py:739
+#, python-format
+msgid "✓ pH requirement met (%(min)s-%(max)s)"
+msgstr "✓ pH ची गरज पूर्ण झाली (%(min)s-%(max)s)"
+
+#: app.py:742
+#, python-format
+msgid "⚠ pH adjustment may be needed (optimal: %(min)s-%(max)s)"
+msgstr "⚠ pH मध्ये समायोजन आवश्यक असू शकते (इष्टतम: %(min)s-%(max)s)"
+
+#: app.py:748
+#, python-format
+msgid "✓ Suitable for %(season)s season"
+msgstr "✓ %(season)s हंगामासाठी उपयुक्त"
+
+#: app.py:751
+#, python-format
+msgid "⚠ Not ideal season (best: %(seasons)s)"
+msgstr "⚠ आदर्श हंगाम नाही (सर्वोत्तम: %(seasons)s)"
+
+#: app.py:757
+#, python-format
+msgid "✓ Suitable for %(level)s farmers"
+msgstr "✓ %(level)s शेतकऱ्यांसाठी उपयुक्त"
+
+#: app.py:760
+#, python-format
+msgid "⚠ May require %(level)s level expertise"
+msgstr "⚠ %(level)s स्तरावरील कौशल्याची आवश्यकता असू शकते"
+
+#: app.py:773
+msgid "✓ Water requirement compatible"
+msgstr "✓ पाण्याची गरज सुसंगत"
+
+#: app.py:776
+#, python-format
+msgid "⚠ Water requirement: %(need)s"
+msgstr "⚠ पाण्याची गरज: %(need)s"
+
+#: app.py:782
+msgid "✓ Matches market preference"
+msgstr "✓ बाजाराच्या पसंतीशी जुळते"
+
+#: app.py:785
+#, python-format
+msgid "⚠ Different market category: %(type)s"
+msgstr "⚠ वेगळी बाजारपेठ श्रेणी: %(type)s"
+
+#: app.py:793
+msgid "Highly Recommended"
+msgstr "अत्यंत शिफारसीय"
+
+#: app.py:796
+msgid "Recommended"
+msgstr "शिफारसीय"
+
+#: app.py:799
+msgid "Moderately Suitable"
+msgstr "मध्यम उपयुक्त"
+
+#: app.py:802
+msgid "Not Recommended"
+msgstr "शिफारस केलेली नाही"
+
+#: app.py:859
+msgid "kg"
+msgstr "किग्रॅ"
+
+#: app.py:859
+msgid "tons"
+msgstr "टन"
+
+#: app.py:895
+msgid "Ensure proper water management"
+msgstr "पाण्याचे योग्य व्यवस्थापन सुनिश्चित करा"
+
+#: app.py:895
+msgid "Consider SRI method for better yields"
+msgstr "चांगल्या उत्पादनासाठी एसआरआय (SRI) पद्धतीचा विचार करा"
+
+#: app.py:896
+msgid "Apply nitrogen in split doses"
+msgstr "नत्र विभागून वापरा"
+
+#: app.py:896
+msgid "Monitor for rust diseases"
+msgstr "तांबेरा रोगांसाठी निरीक्षण करा"
+
+#: app.py:897
+msgid "Maintain proper plant spacing"
+msgstr "झाडांमधील योग्य अंतर ठेवा"
+
+#: app.py:897
+msgid "Good for intercropping"
+msgstr "आंतरपिकांसाठी चांगले"
+
+#: app.py:898
+msgid "Monitor for bollworm attacks"
+msgstr "बोंडअळीच्या हल्ल्यासाठी निरीक्षण करा"
+
+#: app.py:898
+msgid "Requires skilled labor"
+msgstr "कुशल मजुरांची आवश्यकता आहे"
+
+#: app.py:899
+msgid "Long-term crop commitment"
+msgstr "दीर्घकालीन पीक वचनबद्धता"
+
+#: app.py:899
+msgid "High water requirement"
+msgstr "पाण्याची जास्त गरज"
+
+#: app.py:900
+msgid "Natural nitrogen fixation"
+msgstr "नैसर्गिक नत्र स्थिरीकरण"
+
+#: app.py:900
+msgid "Good rotation crop"
+msgstr "चांगले फेरपालट पीक"
+
+#: app.py:901
+msgid "Requires staking and pruning"
+msgstr "आधाराची (Staking) आणि छाटणीची (Pruning) आवश्यकता"
+
+#: app.py:901
+msgid "High market demand"
+msgstr "बाजारात जास्त मागणी"
+
+#: app.py:902
+msgid "Cool storage needed"
+msgstr "थंड साठवण आवश्यक"
+
+#: app.py:902
+msgid "Good processing potential"
+msgstr "प्रक्रियेसाठी चांगली क्षमता"
+
+#: app.py:903
+msgid "Long shelf life"
+msgstr "जास्त शेल्फ लाइफ"
+
+#: app.py:903
+msgid "Export potential"
+msgstr "निर्यात क्षमता"
+
+#: app.py:904
+msgid "High value spice crop"
+msgstr "उच्च मूल्याचे मसाला पीक"
+
+#: app.py:904
+msgid "Processing opportunities"
+msgstr "प्रक्रियेच्या संधी"
+
+#: app.py:912
+msgid "High rainfall - ensure good drainage"
+msgstr "जास्त पाऊस - चांगला निचरा सुनिश्चित करा"
+
+#: app.py:914
+msgid "Low rainfall - plan irrigation carefully"
+msgstr "कमी पाऊस - सिंचनाचे काळजीपूर्वक नियोजन करा"
+
+#: app.py:917
+msgid "High temperature - consider shade nets"
+msgstr "जास्त तापमान - शेड नेटचा विचार करा"
+
+#: app.py:919
+msgid "Low temperature - may need protection"
+msgstr "कमी तापमान - संरक्षणाची आवश्यकता असू शकते"
+
+#: app.py:939
+msgid "Disease Management"
+msgstr "रोग व्यवस्थापन"
+
+#: app.py:940
+msgid ""
+"My wheat crop is showing yellow rust symptoms. What immediate action "
+"should I take?"
+msgstr "माझ्या गहू पिकात पिवळ्या तांबेराची लक्षणे दिसत आहेत. मी त्वरित कोणती कृती करावी?"
+
+#: app.py:942 app.py:949
+msgid "answered"
+msgstr "उत्तर दिलेले"
+
+#: app.py:946
+msgid "Pest Control"
+msgstr "कीटक नियंत्रण"
+
+#: app.py:947
+msgid ""
+"How to control bollworm attack in cotton without using excessive "
+"pesticides?"
+msgstr "जास्त कीटकनाशकांचा वापर न करता कापूस बोंडअळीचा हल्ला कसा नियंत्रित करावा?"
+
+#: app.py:953
+msgid "Water Management"
+msgstr "जल व्यवस्थापन"
+
+#: app.py:954
+msgid "How to implement drip irrigation system for paddy cultivation?"
+msgstr "भातशेतीसाठी ठिबक सिंचन प्रणाली कशी लागू करावी?"
+
+#: app.py:956
+msgid "open"
+msgstr "सुरू आहे"
+
+#: app.py:966
+msgid "15 years"
+msgstr "१५ वर्षे"
+
+#: app.py:966
+msgid "Organic farming"
+msgstr "सेंद्रिय शेती"
+
+#: app.py:971
+msgid "12 years"
+msgstr "१२ वर्षे"
+
+#: app.py:971
+msgid "Sustainable agriculture"
+msgstr "शाश्वत शेती"
+
+#: app.py:976
+msgid "20 years"
+msgstr "२० वर्षे"
+
+#: app.py:976
+msgid "Precision farming"
+msgstr "अचूक शेती"
+
+#: templates/index.html:11
+msgid "Smart Agriculture with"
+msgstr "स्मार्ट शेती"
+
+#: templates/index.html:12
+msgid "AI Predictions"
+msgstr "एआय अंदाज सह"
+
+#: templates/index.html:15
+msgid ""
+"Revolutionize your farming with cutting-edge AI technology. Get accurate "
+"crop yield predictions, disease alerts, fertilizer recommendations, and "
+"weather forecasts all in one platform."
+msgstr "अत्याधुनिक एआय तंत्रज्ञानाने तुमच्या शेतीत क्रांती घडवा. अचूक पीक उत्पादन अंदाज, रोग सूचना, खत शिफारसी आणि हवामान अंदाज एकाच प्लॅटफॉर्मवर मिळवा."
+
+#: templates/index.html:19
+msgid "Start Predicting"
+msgstr "अंदाज लावायला सुरू करा"
+
+#: templates/index.html:22
+msgid "Learn More"
+msgstr "अधिक जाणून घ्या"
+
+#: templates/index.html:31
+#, python-format
+msgid "95%% Accuracy"
+msgstr "९५%% अचूकता"
+
+#: templates/index.html:35 templates/index.html:85
+msgid "Disease Detection"
+msgstr "रोग ओळख"
+
+#: templates/index.html:39 templates/index.html:106
+msgid "Weather Forecast"
+msgstr "हवामान अंदाज"
+
+#: templates/index.html:51
+msgid "Powerful Features for Modern Farming"
+msgstr "आधुनिक शेतीसाठी शक्तिशाली वैशिष्ट्ये"
+
+#: templates/index.html:53
+msgid ""
+"Leverage the power of artificial intelligence to make informed decisions "
+"and maximize your agricultural productivity."
+msgstr "माहितीपूर्ण निर्णय घेण्यासाठी आणि तुमची कृषी उत्पादकता वाढवण्यासाठी कृत्रिम बुद्धिमत्तेचा वापर करा."
+
+#: templates/index.html:63
+msgid "Crop Recommendation"
+msgstr "पीक शिफारस"
+
+#: templates/index.html:64
+msgid ""
+"Get AI-powered suggestions for the best crops to grow based on your soil,"
+" climate, and farming conditions."
+msgstr "तुमची माती, हवामान आणि शेतीच्या परिस्थितीनुसार सर्वोत्तम पिके घेण्यासाठी एआय-चालित सूचना मिळवा."
+
+#: templates/index.html:65 templates/index.html:76 templates/index.html:87
+#: templates/index.html:98 templates/index.html:108
+msgid "Try Now"
+msgstr "आता वापरून पहा"
+
+#: templates/index.html:74
+msgid "Yield Prediction"
+msgstr "उत्पादन अंदाज"
+
+#: templates/index.html:75
+msgid ""
+"Predict crop yields with high accuracy using weather data, soil "
+"conditions, and historical patterns."
+msgstr "हवामान डेटा, मातीची स्थिती आणि ऐतिहासिक पद्धती वापरून उच्च अचूकतेसह पीक उत्पादनाचा अंदाज लावा."
+
+#: templates/index.html:86
+msgid ""
+"Early detection and prevention of crop diseases to protect your harvest "
+"and reduce losses."
+msgstr "तुमचे पीक वाचवण्यासाठी आणि नुकसान कमी करण्यासाठी पीक रोगांचे लवकर निदान आणि प्रतिबंध करा."
+
+#: templates/index.html:96
+msgid "Fertilizer Guide"
+msgstr "खत मार्गदर्शन"
+
+#: templates/index.html:97
+msgid ""
+"Get personalized fertilizer recommendations based on crop type, soil "
+"condition, and growth stage."
+msgstr "पीक प्रकार, मातीची स्थिती आणि वाढीच्या टप्प्यावर आधारित वैयक्तिक खत शिफारसी मिळवा."
+
+#: templates/index.html:107
+msgid ""
+"Advanced weather predictions to help you plan farming activities and "
+"protect your crops."
+msgstr "शेतीचे नियोजन करण्यासाठी आणि तुमच्या पिकांचे संरक्षण करण्यासाठी प्रगत हवामान अंदाज."
+
+#: templates/index.html:116
+msgid "Farmer Connect"
+msgstr "शेतकरी कनेक्ट"
+
+#: templates/index.html:117
+msgid ""
+"Join our community of farmers to share knowledge, experiences, and grow "
+"together."
+msgstr "ज्ञान, अनुभव सामायिक करण्यासाठी आणि एकत्र वाढण्यासाठी आमच्या शेतकरी समुदायात सामील व्हा."
+
+#: templates/index.html:118
+msgid "Join Now"
+msgstr "आता सामील व्हा"
+
+#: templates/index.html:132
+msgid "Happy Farmers"
+msgstr "आनंदी शेतकरी"
+
+#: templates/index.html:139
+msgid "Prediction Accuracy"
+msgstr "अंदाजाची अचूकता"
+
+#: templates/index.html:146
+msgid "Crop Types"
+msgstr "पिकांचे प्रकार"
+
+#: templates/index.html:153
+msgid "Support Available"
+msgstr "समर्थन उपलब्ध"
+
+#: templates/index.html:164
+msgid "How It Works"
+msgstr "ते कसे कार्य करते"
+
+#: templates/index.html:166
+msgid ""
+"Our AI-powered platform makes agricultural predictions simple and "
+"accurate in just three steps."
+msgstr "आमचा एआय-चालित प्लॅटफॉर्म फक्त तीन चरणांमध्ये कृषी अंदाज सोपे आणि अचूक बनवतो."
+
+#: templates/index.html:177
+msgid "Input Data"
+msgstr "डेटा इनपुट करा"
+
+#: templates/index.html:178
+msgid ""
+"Enter your farm details, crop information, and environmental conditions "
+"through our user-friendly interface."
+msgstr "आमच्या वापरकर्ता-अनुकूल इंटरफेसद्वारे तुमच्या शेतीचे तपशील, पिकांची माहिती आणि पर्यावरणीय परिस्थिती प्रविष्ट करा."
+
+#: templates/index.html:187
+msgid "AI Analysis"
+msgstr "एआय विश्लेषण"
+
+#: templates/index.html:188
+msgid ""
+"Our advanced machine learning algorithms analyze your data and generate "
+"accurate predictions and recommendations."
+msgstr "आमचे प्रगत मशीन लर्निंग अल्गोरिदम तुमच्या डेटाचे विश्लेषण करतात आणि अचूक अंदाज व शिफारसी तयार करतात."
+
+#: templates/index.html:197
+msgid "Get Results"
+msgstr "निकाल मिळवा"
+
+#: templates/index.html:198
+msgid ""
+"Receive detailed insights, predictions, and actionable recommendations to"
+" optimize your farming practices."
+msgstr "तुमच्या शेतीच्या पद्धती सुधारण्यासाठी तपशीलवार अंतर्दृष्टी, अंदाज आणि कृती करण्यायोग्य शिफारसी मिळवा."
+
+#: venv/Lib/site-packages/click/_termui_impl.py:518
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr "{editor}: संपादन अयशस्वी झाले"
+
+#: venv/Lib/site-packages/click/_termui_impl.py:522
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}: संपादन अयशस्वी झाले: {e}"
+
+#: venv/Lib/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr "रद्द केले!"
+
+#: venv/Lib/site-packages/click/core.py:1309
+#: venv/Lib/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr "हा संदेश दाखवा आणि बाहेर पडा."
+
+#: venv/Lib/site-packages/click/core.py:1340
+#: venv/Lib/site-packages/click/core.py:1370
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr "(कालबाह्य) {text}"
+
+#: venv/Lib/site-packages/click/core.py:1387
+msgid "Options"
+msgstr "पर्याय"
+
+#: venv/Lib/site-packages/click/core.py:1413
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "अपेक्षित नसलेला अतिरिक्त युक्तिवाद ({args}) मिळाला"
+msgstr[1] "अपेक्षित नसलेले अतिरिक्त युक्तिवाद ({args}) मिळाले"
+
+#: venv/Lib/site-packages/click/core.py:1429
+#, python-brace-format
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr "कालबाह्यता चेतावणी: {name!r} हा आदेश कालबाह्य झाला आहे."
+
+#: venv/Lib/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr "आदेश"
+
+#: venv/Lib/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr "आदेश गहाळ आहे."
+
+#: venv/Lib/site-packages/click/core.py:1746
+#, python-brace-format
+msgid "No such command {name!r}."
+msgstr "{name!r} असा कोणताही आदेश नाही."
+
+#: venv/Lib/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr "मूल्य पुनरावृत्ती करण्यायोग्य असणे आवश्यक आहे."
+
+#: venv/Lib/site-packages/click/core.py:2331
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "{nargs} मूल्ये घेते पण १ दिले गेले."
+msgstr[1] "{nargs} मूल्ये घेते पण {len} दिली गेली."
+
+#: venv/Lib/site-packages/click/core.py:2778
+#, python-brace-format
+msgid "env var: {var}"
+msgstr "पर्यावरण चल: {var}"
+
+#: venv/Lib/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr "(गतिमान)"
+
+#: venv/Lib/site-packages/click/core.py:2821
+#, python-brace-format
+msgid "default: {default}"
+msgstr "पूर्वनिर्धारित: {default}"
+
+#: venv/Lib/site-packages/click/core.py:2834
+msgid "required"
+msgstr "आवश्यक"
+
+#: venv/Lib/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s, आवृत्ती %(version)s"
+
+#: venv/Lib/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr "आवृत्ती दाखवा आणि बाहेर पडा."
+
+#: venv/Lib/site-packages/click/exceptions.py:44
+#: venv/Lib/site-packages/click/exceptions.py:80
+#, python-brace-format
+msgid "Error: {message}"
+msgstr "त्रुटी: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:72
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr "मदतीसाठी '{command} {option}' वापरून पहा."
+
+#: venv/Lib/site-packages/click/exceptions.py:121
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr "अवैध मूल्य: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:123
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "{param_hint} साठी अवैध मूल्य: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr "युक्तिवाद गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr "पर्याय गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr "प्राचल गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:185
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr "{param_type} गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:192
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr "प्राचल गहाळ आहे: {param_name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:212
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr "असा कोणताही पर्याय नाही: {name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:224
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "तुमचा उद्देश {possibility} आहे का?"
+msgstr[1] "(संभाव्य पर्याय: {possibilities})"
+
+#: venv/Lib/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr "अज्ञात त्रुटी"
+
+#: venv/Lib/site-packages/click/exceptions.py:269
+#, python-brace-format
+msgid "Could not open file {filename!r}: {message}"
+msgstr "{filename!r} फाईल उघडता आली नाही: {message}"
+
+#: venv/Lib/site-packages/click/parser.py:231
+#, python-brace-format
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "युक्तिवाद {name!r} {nargs} मूल्ये घेतो."
+
+#: venv/Lib/site-packages/click/parser.py:413
+#, python-brace-format
+msgid "Option {name!r} does not take a value."
+msgstr "पर्याय {name!r} कोणतेही मूल्य घेत नाही."
+
+#: venv/Lib/site-packages/click/parser.py:474
+#, python-brace-format
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "पर्याय {name!r} साठी युक्तिवाद आवश्यक आहे."
+msgstr[1] "पर्याय {name!r} साठी {nargs} युक्तिवाद आवश्यक आहेत."
+
+#: venv/Lib/site-packages/click/shell_completion.py:319
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "४.४ पेक्षा जुन्या बॅश आवृत्त्यांसाठी शेल पूर्णता समर्थित नाही."
+
+#: venv/Lib/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "बॅश आवृत्ती शोधता आली नाही, शेल पूर्णता समर्थित नाही."
+
+#: venv/Lib/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr "पुष्टीकरणासाठी पुन्हा करा"
+
+#: venv/Lib/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr "त्रुटी: तुम्ही प्रविष्ट केलेले मूल्य अवैध आहे."
+
+#: venv/Lib/site-packages/click/termui.py:176
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr "त्रुटी: {e.message}"
+
+#: venv/Lib/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr "त्रुटी: प्रविष्ट केलेली दोन मूल्ये जुळत नाहीत."
+
+#: venv/Lib/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr "त्रुटी: अवैध इनपुट"
+
+#: venv/Lib/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr "सुरू ठेवण्यासाठी कोणतीही कळ दाबा..."
+
+#: venv/Lib/site-packages/click/types.py:266
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"यापैकी निवडा:\n"
+"\t{choices}"
+
+#: venv/Lib/site-packages/click/types.py:298
+#, python-brace-format
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} हे {choice} नाही."
+msgstr[1] "{value!r} हे {choices} पैकी एक नाही."
+
+#: venv/Lib/site-packages/click/types.py:392
+#, python-brace-format
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} हे {format} स्वरूपाशी जुळत नाही."
+msgstr[1] "{value!r} हे {formats} स्वरूपांशी जुळत नाही."
+
+#: venv/Lib/site-packages/click/types.py:414
+#, python-brace-format
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} हे वैध {number_type} नाही."
+
+#: venv/Lib/site-packages/click/types.py:470
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr "{value} हे {range} श्रेणीत नाही."
+
+#: venv/Lib/site-packages/click/types.py:611
+#, python-brace-format
+msgid "{value!r} is not a valid boolean."
+msgstr "{value!r} हे वैध बूलियन नाही."
+
+#: venv/Lib/site-packages/click/types.py:635
+#, python-brace-format
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} हे वैध UUID नाही."
+
+#: venv/Lib/site-packages/click/types.py:822
+msgid "file"
+msgstr "फाईल"
+
+#: venv/Lib/site-packages/click/types.py:824
+msgid "directory"
+msgstr "निर्देशिका"
+
+#: venv/Lib/site-packages/click/types.py:826
+msgid "path"
+msgstr "पथ"
+
+#: venv/Lib/site-packages/click/types.py:877
+#, python-brace-format
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} अस्तित्वात नाही."
+
+#: venv/Lib/site-packages/click/types.py:886
+#, python-brace-format
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} ही एक फाईल आहे."
+
+#: venv/Lib/site-packages/click/types.py:894
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr "{name} '{filename}' ही एक निर्देशिका आहे."
+
+#: venv/Lib/site-packages/click/types.py:903
+#, python-brace-format
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} वाचनीय नाही."
+
+#: venv/Lib/site-packages/click/types.py:912
+#, python-brace-format
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} लिहिण्यायोग्य नाही."
+
+#: venv/Lib/site-packages/click/types.py:921
+#, python-brace-format
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} अंमलात आणण्यायोग्य नाही."
+
+#: venv/Lib/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "{len_type} मूल्यांची आवश्यकता आहे, पण {len_value} दिले गेले."
+msgstr[1] "{len_type} मूल्यांची आवश्यकता आहे, पण {len_value} दिली गेली."
+# Marathi translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-11-04 12:10+0530\n"
+"PO-Revision-Date: 2025-11-04 12:17+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: mr\n"
+"Language-Team: mr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app.py:129
+#, python-format
+msgid "Predicted yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr "अपेक्षित पीक उत्पादन %(crop)s साठी: %(yield_pred)s हेक्टोग्राम/हेक्टर"
+
+#: app.py:140
+#, python-format
+msgid "Estimated yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr "अंदाजित पीक उत्पादन %(crop)s साठी: %(yield_pred)s हेक्टोग्राम/हेक्टर"
+
+#: app.py:175 app.py:181
+msgid "High"
+msgstr "जास्त"
+
+#: app.py:176 app.py:182
+msgid "Medium"
+msgstr "मध्यम"
+
+#: app.py:177 app.py:183
+msgid "Low"
+msgstr "कमी"
+
+#: app.py:181
+msgid "Apply fungicide, improve drainage, reduce plant density"
+msgstr "बुरशीनाशक वापरा, पाण्याचा निचरा सुधारा, लागवडीची घनता कमी करा"
+
+#: app.py:182
+msgid "Monitor crops closely, ensure proper ventilation"
+msgstr "पिकांवर बारकाईने लक्ष ठेवा, योग्य वायुवीजन सुनिश्चित करा"
+
+#: app.py:183
+msgid "Continue regular monitoring, maintain good practices"
+msgstr "नियमित देखरेख सुरू ठेवा, चांगल्या पद्धतींचा अवलंब करा"
+
+#: app.py:189
+msgid "Monitor regularly"
+msgstr "नियमित देखरेख करा"
+
+#: app.py:190
+#, python-format
+msgid "Disease risk level: %(risk_level)s"
+msgstr "रोग धोक्याची पातळी: %(risk_level)s"
+
+#: app.py:213
+msgid ""
+"Low rainfall expected. Consider drought-resistant crops and irrigation "
+"planning."
+msgstr "कमी पावसाची अपेक्षा आहे. दुष्काळ प्रतिरोधक पिके आणि सिंचनाचे नियोजन करा."
+
+#: app.py:215
+msgid "High rainfall expected. Ensure proper drainage and flood management."
+msgstr "जास्त पावसाची अपेक्षा आहे. पाण्याचा योग्य निचरा आणि पूर व्यवस्थापन सुनिश्चित करा."
+
+#: app.py:217
+msgid "Normal rainfall expected. Good conditions for most crops."
+msgstr "सामान्य पावसाची अपेक्षा आहे. बहुतेक पिकांसाठी चांगल्या परिस्थिती आहेत."
+
+#: app.py:225
+#, python-format
+msgid "Weather prediction for %(year)s: %(rainfall_pred)smm rainfall"
+msgstr "वर्ष %(year)s साठी हवामान अंदाज: %(rainfall_pred)s मिमी पाऊस"
+
+#: app.py:251
+msgid "Fertilizer recommendation generated successfully"
+msgstr "खत शिफारस यशस्वीरित्या तयार झाली"
+
+#: app.py:265
+msgid "Fertilizer recommendation generated successfully (estimated values)"
+msgstr "खत शिफारस यशस्वीरित्या तयार झाली (अंदाजित मूल्ये)"
+
+#: app.py:266
+msgid "Recommendations based on general agricultural guidelines"
+msgstr "सामान्य कृषी मार्गदर्शक तत्त्वांवर आधारित शिफारसी"
+
+#: app.py:271
+#, python-format
+msgid "Unable to generate recommendation: %(error)s"
+msgstr "शिफारस तयार करण्यात अक्षम: %(error)s"
+
+#: app.py:299
+msgid "Crop recommendations generated successfully"
+msgstr "पीक शिफारसी यशस्वीरित्या तयार झाल्या"
+
+#: app.py:334
+msgid "Your question has been posted successfully!"
+msgstr "तुमचा प्रश्न यशस्वीरित्या पोस्ट झाला आहे!"
+
+#: app.py:335
+msgid "2-4 hours"
+msgstr "२-४ तास"
+
+#: app.py:361
+#, python-format
+msgid "Found %(count)s farmers in your area"
+msgstr "तुमच्या परिसरात %(count)s शेतकरी सापडले"
+
+#: app.py:378
+msgid "Negotiable"
+msgstr "वाटाघाटी करता येईल"
+
+#: app.py:387
+msgid "Your listing has been posted successfully!"
+msgstr "तुमची सूची यशस्वीरित्या पोस्ट झाली आहे!"
+
+#: app.py:428
+msgid "Low rainfall: Increased fertilizer needs"
+msgstr "कमी पाऊस: खतांची वाढलेली गरज"
+
+#: app.py:433
+msgid "High rainfall: Reduced N&P, increased K for leaching prevention"
+msgstr "जास्त पाऊस: N आणि P कमी, K वाढवा (गळती टाळण्यासाठी)"
+
+#: app.py:438
+msgid "Normal rainfall: Standard fertilizer application"
+msgstr "सामान्य पाऊस: खतांचा मानक वापर"
+
+#: app.py:493
+#, python-format
+msgid "Apply %(n)skg/ha N, %(p)skg/ha P, %(k)skg/ha K for %(crop)s"
+msgstr "%(crop)s साठी %(n)s किग्रॅ/हेक्टर N, %(p)s किग्रॅ/हेक्टर P, %(k)s किग्रॅ/हेक्टर K चा वापर करा"
+
+#: app.py:509
+msgid "Apply all fertilizers as basal dose before sowing"
+msgstr "पेरणीपूर्वी सर्व खते बेसल डोस म्हणून वापरा"
+
+#: app.py:514
+msgid "50% N&K as basal, 50% N&K after 3-4 weeks. All P as basal."
+msgstr "५०% N आणि K बेसल म्हणून, ५०% N आणि K ३-४ आठवड्यांनंतर. सर्व P बेसल म्हणून."
+
+#: app.py:520
+msgid "40% N&K basal, 40% at 25 days, 20% at 45 days. All P basal."
+msgstr "४०% N आणि K बेसल, ४०% २५ दिवसांनी, २०% ४५ दिवसांनी. सर्व P बेसल."
+
+#: app.py:525
+msgid "Focus on P&K for flower/fruit development. Reduce N."
+msgstr "फुल/फळ विकासासाठी P आणि K वर लक्ष केंद्रित करा. N कमी करा."
+
+#: app.py:529
+msgid "Minimal fertilizer. Focus on K for fruit filling."
+msgstr "किमान खत. फळ भरण्यासाठी K वर लक्ष केंद्रित करा."
+
+#: app.py:541
+msgid "Urea (46% N)"
+msgstr "यूरिया (४६% N)"
+
+#: app.py:541
+msgid "Ammonium Sulphate (21% N)"
+msgstr "अमोनियम सल्फेट (२१% N)"
+
+#: app.py:541
+msgid "CAN (26% N)"
+msgstr "सीएएन (२६% N)"
+
+#: app.py:541
+msgid "DAP (18% N)"
+msgstr "डीएपी (१८% N)"
+
+#: app.py:543
+msgid "Nitrogen"
+msgstr "नत्र"
+
+#: app.py:549
+msgid "DAP (46% P2O5)"
+msgstr "डीएपी (४६% P2O5)"
+
+#: app.py:549
+msgid "SSP (16% P2O5)"
+msgstr "एसएसपी (१६% P2O5)"
+
+#: app.py:549
+msgid "TSP (46% P2O5)"
+msgstr "टीएसपी (४६% P2O5)"
+
+#: app.py:549
+msgid "Bone Meal (22% P2O5)"
+msgstr "बोन मील (२२% P2O5)"
+
+#: app.py:551
+msgid "Phosphorus"
+msgstr "स्फुरद"
+
+#: app.py:557
+msgid "MOP (60% K2O)"
+msgstr "एमओपी (६०% K2O)"
+
+#: app.py:557
+msgid "SOP (50% K2O)"
+msgstr "एसओपी (५०% K2O)"
+
+#: app.py:557
+msgid "Potash (50% K2O)"
+msgstr "पोटॅश (५०% K2O)"
+
+#: app.py:557
+msgid "Ash (5% K2O)"
+msgstr "राख (५% K2O)"
+
+#: app.py:559
+msgid "Potassium"
+msgstr "पोटॅशियम"
+
+#: app.py:579 app.py:886
+msgid "INR"
+msgstr "भारतीय रुपया"
+
+#: app.py:704
+#, python-format
+msgid "✓ Rainfall requirement met (%(min)s-%(max)smm)"
+msgstr "✓ पावसाची गरज पूर्ण झाली (%(min)s-%(max)s मिमी)"
+
+#: app.py:707
+#, python-format
+msgid "⚠ Rainfall slightly low (needs %(min)s-%(max)smm)"
+msgstr "⚠ पाऊस थोडा कमी आहे (गरज %(min)s-%(max)s मिमी)"
+
+#: app.py:710
+#, python-format
+msgid "⚠ Rainfall slightly high (optimal: %(min)s-%(max)smm)"
+msgstr "⚠ पाऊस थोडा जास्त आहे (इष्टतम: %(min)s-%(max)s मिमी)"
+
+#: app.py:717
+#, python-format
+msgid "✓ Temperature requirement met (%(min)s-%(max)s°C)"
+msgstr "✓ तापमानाची गरज पूर्ण झाली (%(min)s-%(max)s°C)"
+
+#: app.py:720
+#, python-format
+msgid "⚠ Temperature slightly low (needs %(min)s-%(max)s°C)"
+msgstr "⚠ तापमान थोडे कमी आहे (गरज %(min)s-%(max)s°C)"
+
+#: app.py:723
+#, python-format
+msgid "⚠ Temperature slightly high (optimal: %(min)s-%(max)s°C)"
+msgstr "⚠ तापमान थोडे जास्त आहे (इष्टतम: %(min)s-%(max)s°C)"
+
+#: app.py:729
+#, python-format
+msgid "✓ Suitable for %(soil_type)s soil"
+msgstr "✓ %(soil_type)s मातीसाठी उपयुक्त"
+
+#: app.py:732
+#, python-format
+msgid "⚠ Moderately suitable for %(soil_type)s soil"
+msgstr "⚠ %(soil_type)s मातीसाठी मध्यम उपयुक्त"
+
+#: app.py:739
+#, python-format
+msgid "✓ pH requirement met (%(min)s-%(max)s)"
+msgstr "✓ pH ची गरज पूर्ण झाली (%(min)s-%(max)s)"
+
+#: app.py:742
+#, python-format
+msgid "⚠ pH adjustment may be needed (optimal: %(min)s-%(max)s)"
+msgstr "⚠ pH मध्ये समायोजन आवश्यक असू शकते (इष्टतम: %(min)s-%(max)s)"
+
+#: app.py:748
+#, python-format
+msgid "✓ Suitable for %(season)s season"
+msgstr "✓ %(season)s हंगामासाठी उपयुक्त"
+
+#: app.py:751
+#, python-format
+msgid "⚠ Not ideal season (best: %(seasons)s)"
+msgstr "⚠ आदर्श हंगाम नाही (सर्वोत्तम: %(seasons)s)"
+
+#: app.py:757
+#, python-format
+msgid "✓ Suitable for %(level)s farmers"
+msgstr "✓ %(level)s शेतकऱ्यांसाठी उपयुक्त"
+
+#: app.py:760
+#, python-format
+msgid "⚠ May require %(level)s level expertise"
+msgstr "⚠ %(level)s स्तरावरील कौशल्याची आवश्यकता असू शकते"
+
+#: app.py:773
+msgid "✓ Water requirement compatible"
+msgstr "✓ पाण्याची गरज सुसंगत"
+
+#: app.py:776
+#, python-format
+msgid "⚠ Water requirement: %(need)s"
+msgstr "⚠ पाण्याची गरज: %(need)s"
+
+#: app.py:782
+msgid "✓ Matches market preference"
+msgstr "✓ बाजाराच्या पसंतीशी जुळते"
+
+#: app.py:785
+#, python-format
+msgid "⚠ Different market category: %(type)s"
+msgstr "⚠ वेगळी बाजारपेठ श्रेणी: %(type)s"
+
+#: app.py:793
+msgid "Highly Recommended"
+msgstr "अत्यंत शिफारसीय"
+
+#: app.py:796
+msgid "Recommended"
+msgstr "शिफारसीय"
+
+#: app.py:799
+msgid "Moderately Suitable"
+msgstr "मध्यम उपयुक्त"
+
+#: app.py:802
+msgid "Not Recommended"
+msgstr "शिफारस केलेली नाही"
+
+#: app.py:859
+msgid "kg"
+msgstr "किग्रॅ"
+
+#: app.py:859
+msgid "tons"
+msgstr "टन"
+
+#: app.py:895
+msgid "Ensure proper water management"
+msgstr "पाण्याचे योग्य व्यवस्थापन सुनिश्चित करा"
+
+#: app.py:895
+msgid "Consider SRI method for better yields"
+msgstr "चांगल्या उत्पादनासाठी एसआरआय (SRI) पद्धतीचा विचार करा"
+
+#: app.py:896
+msgid "Apply nitrogen in split doses"
+msgstr "नत्र विभागून वापरा"
+
+#: app.py:896
+msgid "Monitor for rust diseases"
+msgstr "तांबेरा रोगांसाठी निरीक्षण करा"
+
+#: app.py:897
+msgid "Maintain proper plant spacing"
+msgstr "झाडांमधील योग्य अंतर ठेवा"
+
+#: app.py:897
+msgid "Good for intercropping"
+msgstr "आंतरपिकांसाठी चांगले"
+
+#: app.py:898
+msgid "Monitor for bollworm attacks"
+msgstr "बोंडअळीच्या हल्ल्यासाठी निरीक्षण करा"
+
+#: app.py:898
+msgid "Requires skilled labor"
+msgstr "कुशल मजुरांची आवश्यकता आहे"
+
+#: app.py:899
+msgid "Long-term crop commitment"
+msgstr "दीर्घकालीन पीक वचनबद्धता"
+
+#: app.py:899
+msgid "High water requirement"
+msgstr "पाण्याची जास्त गरज"
+
+#: app.py:900
+msgid "Natural nitrogen fixation"
+msgstr "नैसर्गिक नत्र स्थिरीकरण"
+
+#: app.py:900
+msgid "Good rotation crop"
+msgstr "चांगले फेरपालट पीक"
+
+#: app.py:901
+msgid "Requires staking and pruning"
+msgstr "आधाराची (Staking) आणि छाटणीची (Pruning) आवश्यकता"
+
+#: app.py:901
+msgid "High market demand"
+msgstr "बाजारात जास्त मागणी"
+
+#: app.py:902
+msgid "Cool storage needed"
+msgstr "थंड साठवण आवश्यक"
+
+#: app.py:902
+msgid "Good processing potential"
+msgstr "प्रक्रियेसाठी चांगली क्षमता"
+
+#: app.py:903
+msgid "Long shelf life"
+msgstr "जास्त शेल्फ लाइफ"
+
+#: app.py:903
+msgid "Export potential"
+msgstr "निर्यात क्षमता"
+
+#: app.py:904
+msgid "High value spice crop"
+msgstr "उच्च मूल्याचे मसाला पीक"
+
+#: app.py:904
+msgid "Processing opportunities"
+msgstr "प्रक्रियेच्या संधी"
+
+#: app.py:912
+msgid "High rainfall - ensure good drainage"
+msgstr "जास्त पाऊस - चांगला निचरा सुनिश्चित करा"
+
+#: app.py:914
+msgid "Low rainfall - plan irrigation carefully"
+msgstr "कमी पाऊस - सिंचनाचे काळजीपूर्वक नियोजन करा"
+
+#: app.py:917
+msgid "High temperature - consider shade nets"
+msgstr "जास्त तापमान - शेड नेटचा विचार करा"
+
+#: app.py:919
+msgid "Low temperature - may need protection"
+msgstr "कमी तापमान - संरक्षणाची आवश्यकता असू शकते"
+
+#: app.py:939
+msgid "Disease Management"
+msgstr "रोग व्यवस्थापन"
+
+#: app.py:940
+msgid ""
+"My wheat crop is showing yellow rust symptoms. What immediate action "
+"should I take?"
+msgstr "माझ्या गहू पिकात पिवळ्या तांबेराची लक्षणे दिसत आहेत. मी त्वरित कोणती कृती करावी?"
+
+#: app.py:942 app.py:949
+msgid "answered"
+msgstr "उत्तर दिलेले"
+
+#: app.py:946
+msgid "Pest Control"
+msgstr "कीटक नियंत्रण"
+
+#: app.py:947
+msgid ""
+"How to control bollworm attack in cotton without using excessive "
+"pesticides?"
+msgstr "जास्त कीटकनाशकांचा वापर न करता कापूस बोंडअळीचा हल्ला कसा नियंत्रित करावा?"
+
+#: app.py:953
+msgid "Water Management"
+msgstr "जल व्यवस्थापन"
+
+#: app.py:954
+msgid "How to implement drip irrigation system for paddy cultivation?"
+msgstr "भातशेतीसाठी ठिबक सिंचन प्रणाली कशी लागू करावी?"
+
+#: app.py:956
+msgid "open"
+msgstr "सुरू आहे"
+
+#: app.py:966
+msgid "15 years"
+msgstr "१५ वर्षे"
+
+#: app.py:966
+msgid "Organic farming"
+msgstr "सेंद्रिय शेती"
+
+#: app.py:971
+msgid "12 years"
+msgstr "१२ वर्षे"
+
+#: app.py:971
+msgid "Sustainable agriculture"
+msgstr "शाश्वत शेती"
+
+#: app.py:976
+msgid "20 years"
+msgstr "२० वर्षे"
+
+#: app.py:976
+msgid "Precision farming"
+msgstr "अचूक शेती"
+
+#: templates/index.html:11
+msgid "Smart Agriculture with"
+msgstr "स्मार्ट शेती"
+
+#: templates/index.html:12
+msgid "AI Predictions"
+msgstr "एआय अंदाज सह"
+
+#: templates/index.html:15
+msgid ""
+"Revolutionize your farming with cutting-edge AI technology. Get accurate "
+"crop yield predictions, disease alerts, fertilizer recommendations, and "
+"weather forecasts all in one platform."
+msgstr "अत्याधुनिक एआय तंत्रज्ञानाने तुमच्या शेतीत क्रांती घडवा. अचूक पीक उत्पादन अंदाज, रोग सूचना, खत शिफारसी आणि हवामान अंदाज एकाच प्लॅटफॉर्मवर मिळवा."
+
+#: templates/index.html:19
+msgid "Start Predicting"
+msgstr "अंदाज लावायला सुरू करा"
+
+#: templates/index.html:22
+msgid "Learn More"
+msgstr "अधिक जाणून घ्या"
+
+#: templates/index.html:31
+#, python-format
+msgid "95%% Accuracy"
+msgstr "९५%% अचूकता"
+
+#: templates/index.html:35 templates/index.html:85
+msgid "Disease Detection"
+msgstr "रोग ओळख"
+
+#: templates/index.html:39 templates/index.html:106
+msgid "Weather Forecast"
+msgstr "हवामान अंदाज"
+
+#: templates/index.html:51
+msgid "Powerful Features for Modern Farming"
+msgstr "आधुनिक शेतीसाठी शक्तिशाली वैशिष्ट्ये"
+
+#: templates/index.html:53
+msgid ""
+"Leverage the power of artificial intelligence to make informed decisions "
+"and maximize your agricultural productivity."
+msgstr "माहितीपूर्ण निर्णय घेण्यासाठी आणि तुमची कृषी उत्पादकता वाढवण्यासाठी कृत्रिम बुद्धिमत्तेचा वापर करा."
+
+#: templates/index.html:63
+msgid "Crop Recommendation"
+msgstr "पीक शिफारस"
+
+#: templates/index.html:64
+msgid ""
+"Get AI-powered suggestions for the best crops to grow based on your soil,"
+" climate, and farming conditions."
+msgstr "तुमची माती, हवामान आणि शेतीच्या परिस्थितीनुसार सर्वोत्तम पिके घेण्यासाठी एआय-चालित सूचना मिळवा."
+
+#: templates/index.html:65 templates/index.html:76 templates/index.html:87
+#: templates/index.html:98 templates/index.html:108
+msgid "Try Now"
+msgstr "आता वापरून पहा"
+
+#: templates/index.html:74
+msgid "Yield Prediction"
+msgstr "उत्पादन अंदाज"
+
+#: templates/index.html:75
+msgid ""
+"Predict crop yields with high accuracy using weather data, soil "
+"conditions, and historical patterns."
+msgstr "हवामान डेटा, मातीची स्थिती आणि ऐतिहासिक पद्धती वापरून उच्च अचूकतेसह पीक उत्पादनाचा अंदाज लावा."
+
+#: templates/index.html:86
+msgid ""
+"Early detection and prevention of crop diseases to protect your harvest "
+"and reduce losses."
+msgstr "तुमचे पीक वाचवण्यासाठी आणि नुकसान कमी करण्यासाठी पीक रोगांचे लवकर निदान आणि प्रतिबंध करा."
+
+#: templates/index.html:96
+msgid "Fertilizer Guide"
+msgstr "खत मार्गदर्शन"
+
+#: templates/index.html:97
+msgid ""
+"Get personalized fertilizer recommendations based on crop type, soil "
+"condition, and growth stage."
+msgstr "पीक प्रकार, मातीची स्थिती आणि वाढीच्या टप्प्यावर आधारित वैयक्तिक खत शिफारसी मिळवा."
+
+#: templates/index.html:107
+msgid ""
+"Advanced weather predictions to help you plan farming activities and "
+"protect your crops."
+msgstr "शेतीचे नियोजन करण्यासाठी आणि तुमच्या पिकांचे संरक्षण करण्यासाठी प्रगत हवामान अंदाज."
+
+#: templates/index.html:116
+msgid "Farmer Connect"
+msgstr "शेतकरी कनेक्ट"
+
+#: templates/index.html:117
+msgid ""
+"Join our community of farmers to share knowledge, experiences, and grow "
+"together."
+msgstr "ज्ञान, अनुभव सामायिक करण्यासाठी आणि एकत्र वाढण्यासाठी आमच्या शेतकरी समुदायात सामील व्हा."
+
+#: templates/index.html:118
+msgid "Join Now"
+msgstr "आता सामील व्हा"
+
+#: templates/index.html:132
+msgid "Happy Farmers"
+msgstr "आनंदी शेतकरी"
+
+#: templates/index.html:139
+msgid "Prediction Accuracy"
+msgstr "अंदाजाची अचूकता"
+
+#: templates/index.html:146
+msgid "Crop Types"
+msgstr "पिकांचे प्रकार"
+
+#: templates/index.html:153
+msgid "Support Available"
+msgstr "समर्थन उपलब्ध"
+
+#: templates/index.html:164
+msgid "How It Works"
+msgstr "ते कसे कार्य करते"
+
+#: templates/index.html:166
+msgid ""
+"Our AI-powered platform makes agricultural predictions simple and "
+"accurate in just three steps."
+msgstr "आमचा एआय-चालित प्लॅटफॉर्म फक्त तीन चरणांमध्ये कृषी अंदाज सोपे आणि अचूक बनवतो."
+
+#: templates/index.html:177
+msgid "Input Data"
+msgstr "डेटा इनपुट करा"
+
+#: templates/index.html:178
+msgid ""
+"Enter your farm details, crop information, and environmental conditions "
+"through our user-friendly interface."
+msgstr "आमच्या वापरकर्ता-अनुकूल इंटरफेसद्वारे तुमच्या शेतीचे तपशील, पिकांची माहिती आणि पर्यावरणीय परिस्थिती प्रविष्ट करा."
+
+#: templates/index.html:187
+msgid "AI Analysis"
+msgstr "एआय विश्लेषण"
+
+#: templates/index.html:188
+msgid ""
+"Our advanced machine learning algorithms analyze your data and generate "
+"accurate predictions and recommendations."
+msgstr "आमचे प्रगत मशीन लर्निंग अल्गोरिदम तुमच्या डेटाचे विश्लेषण करतात आणि अचूक अंदाज व शिफारसी तयार करतात."
+
+#: templates/index.html:197
+msgid "Get Results"
+msgstr "निकाल मिळवा"
+
+#: templates/index.html:198
+msgid ""
+"Receive detailed insights, predictions, and actionable recommendations to"
+" optimize your farming practices."
+msgstr "तुमच्या शेतीच्या पद्धती सुधारण्यासाठी तपशीलवार अंतर्दृष्टी, अंदाज आणि कृती करण्यायोग्य शिफारसी मिळवा."
+
+#: venv/Lib/site-packages/click/_termui_impl.py:518
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr "{editor}: संपादन अयशस्वी झाले"
+
+#: venv/Lib/site-packages/click/_termui_impl.py:522
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}: संपादन अयशस्वी झाले: {e}"
+
+#: venv/Lib/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr "रद्द केले!"
+
+#: venv/Lib/site-packages/click/core.py:1309
+#: venv/Lib/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr "हा संदेश दाखवा आणि बाहेर पडा."
+
+#: venv/Lib/site-packages/click/core.py:1340
+#: venv/Lib/site-packages/click/core.py:1370
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr "(कालबाह्य) {text}"
+
+#: venv/Lib/site-packages/click/core.py:1387
+msgid "Options"
+msgstr "पर्याय"
+
+#: venv/Lib/site-packages/click/core.py:1413
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "अपेक्षित नसलेला अतिरिक्त युक्तिवाद ({args}) मिळाला"
+msgstr[1] "अपेक्षित नसलेले अतिरिक्त युक्तिवाद ({args}) मिळाले"
+
+#: venv/Lib/site-packages/click/core.py:1429
+#, python-brace-format
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr "कालबाह्यता चेतावणी: {name!r} हा आदेश कालबाह्य झाला आहे."
+
+#: venv/Lib/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr "आदेश"
+
+#: venv/Lib/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr "आदेश गहाळ आहे."
+
+#: venv/Lib/site-packages/click/core.py:1746
+#, python-brace-format
+msgid "No such command {name!r}."
+msgstr "{name!r} असा कोणताही आदेश नाही."
+
+#: venv/Lib/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr "मूल्य पुनरावृत्ती करण्यायोग्य असणे आवश्यक आहे."
+
+#: venv/Lib/site-packages/click/core.py:2331
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "{nargs} मूल्ये घेते पण १ दिले गेले."
+msgstr[1] "{nargs} मूल्ये घेते पण {len} दिली गेली."
+
+#: venv/Lib/site-packages/click/core.py:2778
+#, python-brace-format
+msgid "env var: {var}"
+msgstr "पर्यावरण चल: {var}"
+
+#: venv/Lib/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr "(गतिमान)"
+
+#: venv/Lib/site-packages/click/core.py:2821
+#, python-brace-format
+msgid "default: {default}"
+msgstr "पूर्वनिर्धारित: {default}"
+
+#: venv/Lib/site-packages/click/core.py:2834
+msgid "required"
+msgstr "आवश्यक"
+
+#: venv/Lib/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s, आवृत्ती %(version)s"
+
+#: venv/Lib/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr "आवृत्ती दाखवा आणि बाहेर पडा."
+
+#: venv/Lib/site-packages/click/exceptions.py:44
+#: venv/Lib/site-packages/click/exceptions.py:80
+#, python-brace-format
+msgid "Error: {message}"
+msgstr "त्रुटी: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:72
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr "मदतीसाठी '{command} {option}' वापरून पहा."
+
+#: venv/Lib/site-packages/click/exceptions.py:121
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr "अवैध मूल्य: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:123
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "{param_hint} साठी अवैध मूल्य: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr "युक्तिवाद गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr "पर्याय गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr "प्राचल गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:185
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr "{param_type} गहाळ आहे"
+
+#: venv/Lib/site-packages/click/exceptions.py:192
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr "प्राचल गहाळ आहे: {param_name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:212
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr "असा कोणताही पर्याय नाही: {name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:224
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "तुमचा उद्देश {possibility} आहे का?"
+msgstr[1] "(संभाव्य पर्याय: {possibilities})"
+
+#: venv/Lib/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr "अज्ञात त्रुटी"
+
+#: venv/Lib/site-packages/click/exceptions.py:269
+#, python-brace-format
+msgid "Could not open file {filename!r}: {message}"
+msgstr "{filename!r} फाईल उघडता आली नाही: {message}"
+
+#: venv/Lib/site-packages/click/parser.py:231
+#, python-brace-format
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "युक्तिवाद {name!r} {nargs} मूल्ये घेतो."
+
+#: venv/Lib/site-packages/click/parser.py:413
+#, python-brace-format
+msgid "Option {name!r} does not take a value."
+msgstr "पर्याय {name!r} कोणतेही मूल्य घेत नाही."
+
+#: venv/Lib/site-packages/click/parser.py:474
+#, python-brace-format
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "पर्याय {name!r} साठी युक्तिवाद आवश्यक आहे."
+msgstr[1] "पर्याय {name!r} साठी {nargs} युक्तिवाद आवश्यक आहेत."
+
+#: venv/Lib/site-packages/click/shell_completion.py:319
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "४.४ पेक्षा जुन्या बॅश आवृत्त्यांसाठी शेल पूर्णता समर्थित नाही."
+
+#: venv/Lib/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "बॅश आवृत्ती शोधता आली नाही, शेल पूर्णता समर्थित नाही."
+
+#: venv/Lib/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr "पुष्टीकरणासाठी पुन्हा करा"
+
+#: venv/Lib/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr "त्रुटी: तुम्ही प्रविष्ट केलेले मूल्य अवैध आहे."
+
+#: venv/Lib/site-packages/click/termui.py:176
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr "त्रुटी: {e.message}"
+
+#: venv/Lib/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr "त्रुटी: प्रविष्ट केलेली दोन मूल्ये जुळत नाहीत."
+
+#: venv/Lib/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr "त्रुटी: अवैध इनपुट"
+
+#: venv/Lib/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr "सुरू ठेवण्यासाठी कोणतीही कळ दाबा..."
+
+#: venv/Lib/site-packages/click/types.py:266
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"यापैकी निवडा:\n"
+"\t{choices}"
+
+#: venv/Lib/site-packages/click/types.py:298
+#, python-brace-format
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} हे {choice} नाही."
+msgstr[1] "{value!r} हे {choices} पैकी एक नाही."
+
+#: venv/Lib/site-packages/click/types.py:392
+#, python-brace-format
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} हे {format} स्वरूपाशी जुळत नाही."
+msgstr[1] "{value!r} हे {formats} स्वरूपांशी जुळत नाही."
+
+#: venv/Lib/site-packages/click/types.py:414
+#, python-brace-format
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} हे वैध {number_type} नाही."
+
+#: venv/Lib/site-packages/click/types.py:470
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr "{value} हे {range} श्रेणीत नाही."
+
+#: venv/Lib/site-packages/click/types.py:611
+#, python-brace-format
+msgid "{value!r} is not a valid boolean."
+msgstr "{value!r} हे वैध बूलियन नाही."
+
+#: venv/Lib/site-packages/click/types.py:635
+#, python-brace-format
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} हे वैध UUID नाही."
+
+#: venv/Lib/site-packages/click/types.py:822
+msgid "file"
+msgstr "फाईल"
+
+#: venv/Lib/site-packages/click/types.py:824
+msgid "directory"
+msgstr "निर्देशिका"
+
+#: venv/Lib/site-packages/click/types.py:826
+msgid "path"
+msgstr "पथ"
+
+#: venv/Lib/site-packages/click/types.py:877
+#, python-brace-format
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} अस्तित्वात नाही."
+
+#: venv/Lib/site-packages/click/types.py:886
+#, python-brace-format
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} ही एक फाईल आहे."
+
+#: venv/Lib/site-packages/click/types.py:894
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr "{name} '{filename}' ही एक निर्देशिका आहे."
+
+#: venv/Lib/site-packages/click/types.py:903
+#, python-brace-format
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} वाचनीय नाही."
+
+#: venv/Lib/site-packages/click/types.py:912
+#, python-brace-format
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} लिहिण्यायोग्य नाही."
+
+#: venv/Lib/site-packages/click/types.py:921
+#, python-brace-format
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} अंमलात आणण्यायोग्य नाही."
+
+#: venv/Lib/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "{len_type} मूल्यांची आवश्यकता आहे, पण {len_value} दिले गेले."
+msgstr[1] "{len_type} मूल्यांची आवश्यकता आहे, पण {len_value} दिली गेली."

@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}Farmer Forum - Community Discussions{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="text-plant-primary">
+                    <i class="fas fa-comments me-2"></i>Community Forum
+                </h2>
+                <p class="text-muted">Join the conversation with fellow farmers</p>
+            </div>
+        </div>
+        
+        <!-- Forum Categories -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">Discussion Categories</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="category-card p-3 bg-light rounded">
+                                    <h6><i class="fas fa-bug text-danger me-2"></i>Pest & Disease</h6>
+                                    <small class="text-muted">1,245 discussions</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="category-card p-3 bg-light rounded">
+                                    <h6><i class="fas fa-flask text-primary me-2"></i>Fertilizers & Nutrition</h6>
+                                    <small class="text-muted">892 discussions</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="category-card p-3 bg-light rounded">
+                                    <h6><i class="fas fa-tint text-info me-2"></i>Irrigation & Water</h6>
+                                    <small class="text-muted">567 discussions</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recent Discussions -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Recent Discussions</h5>
+                        <button class="btn btn-primary btn-sm" onclick="location.href='{{ url_for('farmer_connect') }}#ask-question'">
+                            <i class="fas fa-plus me-1"></i>Ask Question
+                        </button>
+                    </div>
+                    <div class="card-body" id="forum-posts">
+                        <!-- Posts loaded via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    loadForumPosts();
+});
+
+function loadForumPosts() {
+    fetch('/api/get-forum-posts')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                displayForumPosts(data.posts);
+            }
+        });
+}
+
+function displayForumPosts(posts) {
+    const container = document.getElementById('forum-posts');
+    let html = '';
+    
+    posts.forEach(post => {
+        const statusClass = post.status === 'answered' ? 'success' : 'warning';
+        html += `
+            <div class="border-bottom pb-3 mb-3">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-2">${post.question}</h6>
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <small class="text-muted">
+                                <i class="fas fa-user me-1"></i>${post.farmer_name}
+                            </small>
+                            <small class="text-muted">
+                                <i class="fas fa-map-marker-alt me-1"></i>${post.location}
+                            </small>
+                            <span class="badge bg-secondary">${post.crop_type}</span>
+                            <span class="badge bg-info">${post.category}</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>${new Date(post.timestamp).toLocaleDateString()}
+                            </small>
+                            <small class="text-muted">
+                                <i class="fas fa-comments me-1"></i>${post.responses} responses
+                            </small>
+                            <small class="text-muted">
+                                <i class="fas fa-thumbs-up me-1"></i>${post.helpful_count} helpful
+                            </small>
+                        </div>
+                    </div>
+                    <span class="badge bg-${statusClass}">${post.status}</span>
+                </div>
+            </div>
+        `;
+    });
+    
+    container.innerHTML = html;
+}
+</script>
+{% endblock %}

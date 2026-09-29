@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Weather Prediction - AgriPredict{% endblock %}
+
+{% block content %}
+<section class="prediction-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="prediction-card">
+                    <div class="text-center mb-4">
+                        <h2 class="text-plant-primary">
+                            <i class="fas fa-cloud-sun me-3"></i>Agricultural Weather Forecast
+                        </h2>
+                        <p class="text-muted">Get weather predictions to plan your farming activities</p>
+                    </div>
+
+                    <form id="weather-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="year" class="form-label">Forecast Year</label>
+                                <select class="form-select" id="year" name="year" required>
+                                    <option value="">Select Year</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="location" class="form-label">Location/Region</label>
+                                <select class="form-select" id="location" name="location" required>
+                                    <option value="">Select Location</option>
+                                    <option value="North India">North India</option>
+                                    <option value="South India">South India</option>
+                                    <option value="East India">East India</option>
+                                    <option value="West India">West India</option>
+                                    <option value="Central India">Central India</option>
+                                    <option value="Northeast India">Northeast India</option>
+                                    <option value="Coastal Areas">Coastal Areas</option>
+                                    <option value="Hill Stations">Hill Stations</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="season" class="form-label">Primary Season of Interest</label>
+                                <select class="form-select" id="season" name="season">
+                                    <option value="annual">Annual Forecast</option>
+                                    <option value="kharif">Kharif Season (June-October)</option>
+                                    <option value="rabi">Rabi Season (November-April)</option>
+                                    <option value="zaid">Zaid Season (April-June)</option>
+                                    <option value="monsoon">Monsoon Period</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="crop_cycle" class="form-label">Crop Cycle Planning</label>
+                                <select class="form-select" id="crop_cycle" name="crop_cycle">
+                                    <option value="general">General Planning</option>
+                                    <option value="sowing">Sowing Period</option>
+                                    <option value="growing">Growing Season</option>
+                                    <option value="harvesting">Harvesting Time</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Note:</strong> Weather predictions are based on historical patterns and climate models. 
+                            For short-term forecasts (1-7 days), please refer to local meteorological services.
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="fas fa-crystal-ball me-2"></i>Get Weather Forecast
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Loading indicator -->
+                    <div id="weather-loading" class="loading mt-4">
+                        <div class="spinner-border text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2">Analyzing weather patterns...</p>
+                    </div>
+
+                    <!-- Result container -->
+                    <div id="weather-result" class="mt-4" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Weather Planning Tips -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h3 class="text-plant-primary">Weather-Smart Farming Tips</h3>
+                <p class="text-muted">Make informed decisions based on weather forecasts</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cloud-rain fa-3x text-primary mb-3"></i>
+                        <h6>Monsoon Planning</h6>
+                        <p class="small">Prepare drainage, select water-resistant varieties, plan sowing dates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-sun fa-3x text-warning mb-3"></i>
+                        <h6>Drought Management</h6>
+                        <p class="small">Install irrigation, choose drought-tolerant crops, mulching techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-thermometer-half fa-3x text-success mb-3"></i>
+                        <h6>Temperature Control</h6>
+                        <p class="small">Shade nets, greenhouse farming, timing of field operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-wind fa-3x text-info mb-3"></i>
+                        <h6>Wind Protection</h6>
+                        <p class="small">Windbreaks, crop orientation, structural support for tall crops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

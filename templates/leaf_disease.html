@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Leaf Disease Scanner') }} - AgriPredict{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-success"><i class="fas fa-camera me-2"></i>{{ _('Crop Leaf Disease Scanner') }}</h2>
+                <p class="text-muted">{{ _('Upload a clear photograph of an affected crop leaf for instant AI computer vision diagnosis.') }}</p>
+            </div>
+
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
+                <div class="card-body p-4 p-md-5">
+                    <form id="leaf-scanner-form" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <label class="form-label font-semibold"><i class="fas fa-leaf text-success me-2"></i>{{ _('Select Leaf Image File') }}</label>
+                            <input type="file" id="leaf-image-input" name="leaf_image" class="form-control form-control-lg" accept="image/*" required>
+                            <small class="text-muted mt-1 d-block">{{ _('Supported formats: JPG, JPEG, PNG (Max size: 10MB)') }}</small>
+                        </div>
+
+                        <!-- Image Preview Box -->
+                        <div id="image-preview-container" class="text-center mb-4 d-none">
+                            <img id="image-preview" src="#" alt="Leaf Preview" class="img-fluid rounded-3 shadow-sm style-preview" style="max-height: 250px; object-fit: contain;">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg fw-bold" id="analyze-btn">
+                                <i class="fas fa-microscope me-2"></i>{{ _('Diagnose Leaf Health') }}
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Loading Spinner -->
+                    <div id="scanner-loading" class="text-center py-4 d-none">
+                        <div class="spinner-border text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2 text-muted fw-semibold">{{ _('Analyzing leaf RGB spectrum and spot patterns...') }}</p>
+                    </div>
+
+                    <!-- Diagnosis Result Card -->
+                    <div id="scanner-result" class="mt-4 d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.getElementById('leaf-image-input');
+    const previewContainer = document.getElementById('image-preview-container');
+    const previewImg = document.getElementById('image-preview');
+    const form = document.getElementById('leaf-scanner-form');
+    const loading = document.getElementById('scanner-loading');
+    const resultDiv = document.getElementById('scanner-result');
+
+    input.addEventListener('change', function() {
+        const file = this.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                previewImg.src = e.target.result;
+                previewContainer.classList.remove('d-none');
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        loading.classList.remove('d-none');
+        resultDiv.classList.add('d-none');
+
+        try {
+            const response = await fetch('/api/predict-leaf-disease', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            loading.classList.add('d-none');
+
+            if (data.success) {
+                resultDiv.innerHTML = `
+                    <div class="card border-0 bg-light rounded-3 p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="fw-bold text-dark mb-0">${data.diagnosis.disease_name}</h4>
+                            <span class="badge bg-${data.diagnosis.badge_class} fs-6 px-3 py-2">${data.diagnosis.status}</span>
+                        </div>
+                        
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white rounded-3 border">
+                                    <small class="text-muted d-block fw-semibold">${_('AI Diagnostic Confidence')}</small>
+                                    <h3 class="text-success fw-bold mb-0">${data.diagnosis.confidence}%</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white rounded-3 border">
+                                    <small class="text-muted d-block fw-semibold">${_('Green Tissue Ratio')}</small>
+                                    <h3 class="text-primary fw-bold mb-0">${data.diagnosis.metrics.green_health_ratio}%</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-success"><i class="fas fa-exclamation-triangle me-2"></i>${_('Primary Symptoms')}</h6>
+                            <p class="text-secondary small mb-0">${data.diagnosis.symptoms}</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-success"><i class="fas fa-leaf me-2"></i>${_('Organic & Bio Remedy')}</h6>
+                            <p class="text-secondary small mb-0">${data.diagnosis.organic_remedy}</p>
+                        </div>
+
+                        <div>
+                            <h6 class="fw-bold text-danger"><i class="fas fa-vial me-2"></i>${_('Recommended Fungicide Treatment')}</h6>
+                            <p class="text-secondary small mb-0">${data.diagnosis.chemical_treatment}</p>
+                        </div>
+                    </div>
+                `;
+                resultDiv.classList.remove('d-none');
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-danger">${data.error || 'Failed to analyze image.'}</div>`;
+                resultDiv.classList.remove('d-none');
+            }
+        } catch (err) {
+            loading.classList.add('d-none');
+            resultDiv.innerHTML = `<div class="alert alert-danger">Server connection error. Please try again.</div>`;
+            resultDiv.classList.remove('d-none');
+        }
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,951 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-11-04 12:10+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app.py:129
+#, python-format
+msgid "Predicted yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr ""
+
+#: app.py:140
+#, python-format
+msgid "Estimated yield for %(crop)s: %(yield_pred)s hg/ha"
+msgstr ""
+
+#: app.py:175 app.py:181
+msgid "High"
+msgstr ""
+
+#: app.py:176 app.py:182
+msgid "Medium"
+msgstr ""
+
+#: app.py:177 app.py:183
+msgid "Low"
+msgstr ""
+
+#: app.py:181
+msgid "Apply fungicide, improve drainage, reduce plant density"
+msgstr ""
+
+#: app.py:182
+msgid "Monitor crops closely, ensure proper ventilation"
+msgstr ""
+
+#: app.py:183
+msgid "Continue regular monitoring, maintain good practices"
+msgstr ""
+
+#: app.py:189
+msgid "Monitor regularly"
+msgstr ""
+
+#: app.py:190
+#, python-format
+msgid "Disease risk level: %(risk_level)s"
+msgstr ""
+
+#: app.py:213
+msgid ""
+"Low rainfall expected. Consider drought-resistant crops and irrigation "
+"planning."
+msgstr ""
+
+#: app.py:215
+msgid "High rainfall expected. Ensure proper drainage and flood management."
+msgstr ""
+
+#: app.py:217
+msgid "Normal rainfall expected. Good conditions for most crops."
+msgstr ""
+
+#: app.py:225
+#, python-format
+msgid "Weather prediction for %(year)s: %(rainfall_pred)smm rainfall"
+msgstr ""
+
+#: app.py:251
+msgid "Fertilizer recommendation generated successfully"
+msgstr ""
+
+#: app.py:265
+msgid "Fertilizer recommendation generated successfully (estimated values)"
+msgstr ""
+
+#: app.py:266
+msgid "Recommendations based on general agricultural guidelines"
+msgstr ""
+
+#: app.py:271
+#, python-format
+msgid "Unable to generate recommendation: %(error)s"
+msgstr ""
+
+#: app.py:299
+msgid "Crop recommendations generated successfully"
+msgstr ""
+
+#: app.py:334
+msgid "Your question has been posted successfully!"
+msgstr ""
+
+#: app.py:335
+msgid "2-4 hours"
+msgstr ""
+
+#: app.py:361
+#, python-format
+msgid "Found %(count)s farmers in your area"
+msgstr ""
+
+#: app.py:378
+msgid "Negotiable"
+msgstr ""
+
+#: app.py:387
+msgid "Your listing has been posted successfully!"
+msgstr ""
+
+#: app.py:428
+msgid "Low rainfall: Increased fertilizer needs"
+msgstr ""
+
+#: app.py:433
+msgid "High rainfall: Reduced N&P, increased K for leaching prevention"
+msgstr ""
+
+#: app.py:438
+msgid "Normal rainfall: Standard fertilizer application"
+msgstr ""
+
+#: app.py:493
+#, python-format
+msgid "Apply %(n)skg/ha N, %(p)skg/ha P, %(k)skg/ha K for %(crop)s"
+msgstr ""
+
+#: app.py:509
+msgid "Apply all fertilizers as basal dose before sowing"
+msgstr ""
+
+#: app.py:514
+msgid "50% N&K as basal, 50% N&K after 3-4 weeks. All P as basal."
+msgstr ""
+
+#: app.py:520
+msgid "40% N&K basal, 40% at 25 days, 20% at 45 days. All P basal."
+msgstr ""
+
+#: app.py:525
+msgid "Focus on P&K for flower/fruit development. Reduce N."
+msgstr ""
+
+#: app.py:529
+msgid "Minimal fertilizer. Focus on K for fruit filling."
+msgstr ""
+
+#: app.py:541
+msgid "Urea (46% N)"
+msgstr ""
+
+#: app.py:541
+msgid "Ammonium Sulphate (21% N)"
+msgstr ""
+
+#: app.py:541
+msgid "CAN (26% N)"
+msgstr ""
+
+#: app.py:541
+msgid "DAP (18% N)"
+msgstr ""
+
+#: app.py:543
+msgid "Nitrogen"
+msgstr ""
+
+#: app.py:549
+msgid "DAP (46% P2O5)"
+msgstr ""
+
+#: app.py:549
+msgid "SSP (16% P2O5)"
+msgstr ""
+
+#: app.py:549
+msgid "TSP (46% P2O5)"
+msgstr ""
+
+#: app.py:549
+msgid "Bone Meal (22% P2O5)"
+msgstr ""
+
+#: app.py:551
+msgid "Phosphorus"
+msgstr ""
+
+#: app.py:557
+msgid "MOP (60% K2O)"
+msgstr ""
+
+#: app.py:557
+msgid "SOP (50% K2O)"
+msgstr ""
+
+#: app.py:557
+msgid "Potash (50% K2O)"
+msgstr ""
+
+#: app.py:557
+msgid "Ash (5% K2O)"
+msgstr ""
+
+#: app.py:559
+msgid "Potassium"
+msgstr ""
+
+#: app.py:579 app.py:886
+msgid "INR"
+msgstr ""
+
+#: app.py:704
+#, python-format
+msgid "✓ Rainfall requirement met (%(min)s-%(max)smm)"
+msgstr ""
+
+#: app.py:707
+#, python-format
+msgid "⚠ Rainfall slightly low (needs %(min)s-%(max)smm)"
+msgstr ""
+
+#: app.py:710
+#, python-format
+msgid "⚠ Rainfall slightly high (optimal: %(min)s-%(max)smm)"
+msgstr ""
+
+#: app.py:717
+#, python-format
+msgid "✓ Temperature requirement met (%(min)s-%(max)s°C)"
+msgstr ""
+
+#: app.py:720
+#, python-format
+msgid "⚠ Temperature slightly low (needs %(min)s-%(max)s°C)"
+msgstr ""
+
+#: app.py:723
+#, python-format
+msgid "⚠ Temperature slightly high (optimal: %(min)s-%(max)s°C)"
+msgstr ""
+
+#: app.py:729
+#, python-format
+msgid "✓ Suitable for %(soil_type)s soil"
+msgstr ""
+
+#: app.py:732
+#, python-format
+msgid "⚠ Moderately suitable for %(soil_type)s soil"
+msgstr ""
+
+#: app.py:739
+#, python-format
+msgid "✓ pH requirement met (%(min)s-%(max)s)"
+msgstr ""
+
+#: app.py:742
+#, python-format
+msgid "⚠ pH adjustment may be needed (optimal: %(min)s-%(max)s)"
+msgstr ""
+
+#: app.py:748
+#, python-format
+msgid "✓ Suitable for %(season)s season"
+msgstr ""
+
+#: app.py:751
+#, python-format
+msgid "⚠ Not ideal season (best: %(seasons)s)"
+msgstr ""
+
+#: app.py:757
+#, python-format
+msgid "✓ Suitable for %(level)s farmers"
+msgstr ""
+
+#: app.py:760
+#, python-format
+msgid "⚠ May require %(level)s level expertise"
+msgstr ""
+
+#: app.py:773
+msgid "✓ Water requirement compatible"
+msgstr ""
+
+#: app.py:776
+#, python-format
+msgid "⚠ Water requirement: %(need)s"
+msgstr ""
+
+#: app.py:782
+msgid "✓ Matches market preference"
+msgstr ""
+
+#: app.py:785
+#, python-format
+msgid "⚠ Different market category: %(type)s"
+msgstr ""
+
+#: app.py:793
+msgid "Highly Recommended"
+msgstr ""
+
+#: app.py:796
+msgid "Recommended"
+msgstr ""
+
+#: app.py:799
+msgid "Moderately Suitable"
+msgstr ""
+
+#: app.py:802
+msgid "Not Recommended"
+msgstr ""
+
+#: app.py:859
+msgid "kg"
+msgstr ""
+
+#: app.py:859
+msgid "tons"
+msgstr ""
+
+#: app.py:895
+msgid "Ensure proper water management"
+msgstr ""
+
+#: app.py:895
+msgid "Consider SRI method for better yields"
+msgstr ""
+
+#: app.py:896
+msgid "Apply nitrogen in split doses"
+msgstr ""
+
+#: app.py:896
+msgid "Monitor for rust diseases"
+msgstr ""
+
+#: app.py:897
+msgid "Maintain proper plant spacing"
+msgstr ""
+
+#: app.py:897
+msgid "Good for intercropping"
+msgstr ""
+
+#: app.py:898
+msgid "Monitor for bollworm attacks"
+msgstr ""
+
+#: app.py:898
+msgid "Requires skilled labor"
+msgstr ""
+
+#: app.py:899
+msgid "Long-term crop commitment"
+msgstr ""
+
+#: app.py:899
+msgid "High water requirement"
+msgstr ""
+
+#: app.py:900
+msgid "Natural nitrogen fixation"
+msgstr ""
+
+#: app.py:900
+msgid "Good rotation crop"
+msgstr ""
+
+#: app.py:901
+msgid "Requires staking and pruning"
+msgstr ""
+
+#: app.py:901
+msgid "High market demand"
+msgstr ""
+
+#: app.py:902
+msgid "Cool storage needed"
+msgstr ""
+
+#: app.py:902
+msgid "Good processing potential"
+msgstr ""
+
+#: app.py:903
+msgid "Long shelf life"
+msgstr ""
+
+#: app.py:903
+msgid "Export potential"
+msgstr ""
+
+#: app.py:904
+msgid "High value spice crop"
+msgstr ""
+
+#: app.py:904
+msgid "Processing opportunities"
+msgstr ""
+
+#: app.py:912
+msgid "High rainfall - ensure good drainage"
+msgstr ""
+
+#: app.py:914
+msgid "Low rainfall - plan irrigation carefully"
+msgstr ""
+
+#: app.py:917
+msgid "High temperature - consider shade nets"
+msgstr ""
+
+#: app.py:919
+msgid "Low temperature - may need protection"
+msgstr ""
+
+#: app.py:939
+msgid "Disease Management"
+msgstr ""
+
+#: app.py:940
+msgid ""
+"My wheat crop is showing yellow rust symptoms. What immediate action "
+"should I take?"
+msgstr ""
+
+#: app.py:942 app.py:949
+msgid "answered"
+msgstr ""
+
+#: app.py:946
+msgid "Pest Control"
+msgstr ""
+
+#: app.py:947
+msgid ""
+"How to control bollworm attack in cotton without using excessive "
+"pesticides?"
+msgstr ""
+
+#: app.py:953
+msgid "Water Management"
+msgstr ""
+
+#: app.py:954
+msgid "How to implement drip irrigation system for paddy cultivation?"
+msgstr ""
+
+#: app.py:956
+msgid "open"
+msgstr ""
+
+#: app.py:966
+msgid "15 years"
+msgstr ""
+
+#: app.py:966
+msgid "Organic farming"
+msgstr ""
+
+#: app.py:971
+msgid "12 years"
+msgstr ""
+
+#: app.py:971
+msgid "Sustainable agriculture"
+msgstr ""
+
+#: app.py:976
+msgid "20 years"
+msgstr ""
+
+#: app.py:976
+msgid "Precision farming"
+msgstr ""
+
+#: templates/index.html:11
+msgid "Smart Agriculture with"
+msgstr ""
+
+#: templates/index.html:12
+msgid "AI Predictions"
+msgstr ""
+
+#: templates/index.html:15
+msgid ""
+"Revolutionize your farming with cutting-edge AI technology. Get accurate "
+"crop yield predictions, disease alerts, fertilizer recommendations, and "
+"weather forecasts all in one platform."
+msgstr ""
+
+#: templates/index.html:19
+msgid "Start Predicting"
+msgstr ""
+
+#: templates/index.html:22
+msgid "Learn More"
+msgstr ""
+
+#: templates/index.html:31
+#, python-format
+msgid "95%% Accuracy"
+msgstr ""
+
+#: templates/index.html:35 templates/index.html:85
+msgid "Disease Detection"
+msgstr ""
+
+#: templates/index.html:39 templates/index.html:106
+msgid "Weather Forecast"
+msgstr ""
+
+#: templates/index.html:51
+msgid "Powerful Features for Modern Farming"
+msgstr ""
+
+#: templates/index.html:53
+msgid ""
+"Leverage the power of artificial intelligence to make informed decisions "
+"and maximize your agricultural productivity."
+msgstr ""
+
+#: templates/index.html:63
+msgid "Crop Recommendation"
+msgstr ""
+
+#: templates/index.html:64
+msgid ""
+"Get AI-powered suggestions for the best crops to grow based on your soil,"
+" climate, and farming conditions."
+msgstr ""
+
+#: templates/index.html:65 templates/index.html:76 templates/index.html:87
+#: templates/index.html:98 templates/index.html:108
+msgid "Try Now"
+msgstr ""
+
+#: templates/index.html:74
+msgid "Yield Prediction"
+msgstr ""
+
+#: templates/index.html:75
+msgid ""
+"Predict crop yields with high accuracy using weather data, soil "
+"conditions, and historical patterns."
+msgstr ""
+
+#: templates/index.html:86
+msgid ""
+"Early detection and prevention of crop diseases to protect your harvest "
+"and reduce losses."
+msgstr ""
+
+#: templates/index.html:96
+msgid "Fertilizer Guide"
+msgstr ""
+
+#: templates/index.html:97
+msgid ""
+"Get personalized fertilizer recommendations based on crop type, soil "
+"condition, and growth stage."
+msgstr ""
+
+#: templates/index.html:107
+msgid ""
+"Advanced weather predictions to help you plan farming activities and "
+"protect your crops."
+msgstr ""
+
+#: templates/index.html:116
+msgid "Farmer Connect"
+msgstr ""
+
+#: templates/index.html:117
+msgid ""
+"Join our community of farmers to share knowledge, experiences, and grow "
+"together."
+msgstr ""
+
+#: templates/index.html:118
+msgid "Join Now"
+msgstr ""
+
+#: templates/index.html:132
+msgid "Happy Farmers"
+msgstr ""
+
+#: templates/index.html:139
+msgid "Prediction Accuracy"
+msgstr ""
+
+#: templates/index.html:146
+msgid "Crop Types"
+msgstr ""
+
+#: templates/index.html:153
+msgid "Support Available"
+msgstr ""
+
+#: templates/index.html:164
+msgid "How It Works"
+msgstr ""
+
+#: templates/index.html:166
+msgid ""
+"Our AI-powered platform makes agricultural predictions simple and "
+"accurate in just three steps."
+msgstr ""
+
+#: templates/index.html:177
+msgid "Input Data"
+msgstr ""
+
+#: templates/index.html:178
+msgid ""
+"Enter your farm details, crop information, and environmental conditions "
+"through our user-friendly interface."
+msgstr ""
+
+#: templates/index.html:187
+msgid "AI Analysis"
+msgstr ""
+
+#: templates/index.html:188
+msgid ""
+"Our advanced machine learning algorithms analyze your data and generate "
+"accurate predictions and recommendations."
+msgstr ""
+
+#: templates/index.html:197
+msgid "Get Results"
+msgstr ""
+
+#: templates/index.html:198
+msgid ""
+"Receive detailed insights, predictions, and actionable recommendations to"
+" optimize your farming practices."
+msgstr ""
+
+#: venv/Lib/site-packages/click/_termui_impl.py:518
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: venv/Lib/site-packages/click/_termui_impl.py:522
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1309
+#: venv/Lib/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1340
+#: venv/Lib/site-packages/click/core.py:1370
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1387
+msgid "Options"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1413
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/core.py:1429
+#, python-brace-format
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1746
+#, python-brace-format
+msgid "No such command {name!r}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2331
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/core.py:2778
+#, python-brace-format
+msgid "env var: {var}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2821
+#, python-brace-format
+msgid "default: {default}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2834
+msgid "required"
+msgstr ""
+
+#: venv/Lib/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: venv/Lib/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:44
+#: venv/Lib/site-packages/click/exceptions.py:80
+#, python-brace-format
+msgid "Error: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:72
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:121
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:123
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:185
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:192
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:212
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:224
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:269
+#, python-brace-format
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:231
+#, python-brace-format
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:413
+#, python-brace-format
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:474
+#, python-brace-format
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/shell_completion.py:319
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: venv/Lib/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:176
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:266
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:298
+#, python-brace-format
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/types.py:392
+#, python-brace-format
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/types.py:414
+#, python-brace-format
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:470
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:611
+#, python-brace-format
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:635
+#, python-brace-format
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:822
+msgid "file"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:824
+msgid "directory"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:826
+msgid "path"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:877
+#, python-brace-format
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:886
+#, python-brace-format
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:894
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:903
+#, python-brace-format
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:912
+#, python-brace-format
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:921
+#, python-brace-format
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+

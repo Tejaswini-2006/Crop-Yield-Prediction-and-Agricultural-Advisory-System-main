@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block title %}Fertilizer Recommendation - AgriPredict{% endblock %}
+
+{% block content %}
+<section class="prediction-container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="prediction-card">
+                    <div class="text-center mb-4">
+                        <h2 class="text-plant-primary">
+                            <i class="fas fa-flask me-3"></i>Fertilizer Recommendation
+                        </h2>
+                        <p class="text-muted">Get personalized NPK recommendations for optimal crop nutrition</p>
+                    </div>
+
+                    <form id="fertilizer-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="crop" class="form-label">Crop Type *</label>
+                                <select class="form-select" id="crop" name="crop" required>
+                                    <option value="">Select Crop</option>
+                                    <option value="Maize">Maize (Corn)</option>
+                                    <option value="Rice">Rice (Paddy)</option>
+                                    <option value="Potatoes">Potatoes</option>
+                                    <option value="Soybeans">Soybeans</option>
+                                    <option value="Wheat">Wheat</option>
+                                    <option value="Sorghum">Sorghum</option>
+                                    <option value="Cotton">Cotton</option>
+                                    <option value="Sugarcane">Sugarcane</option>
+                                    <option value="Tomatoes">Tomatoes</option>
+                                    <option value="Onion">Onion</option>
+                                    <option value="Groundnut">Groundnut</option>
+                                    <option value="Sunflower">Sunflower</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="rainfall" class="form-label">Expected Annual Rainfall (mm) *</label>
+                                <input type="number" class="form-control" id="rainfall" name="rainfall" 
+                                       placeholder="e.g., 1200" min="100" max="4000" required>
+                                <small class="text-muted">Enter expected or historical average rainfall</small>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="soil_type" class="form-label">Soil Type *</label>
+                                <select class="form-select" id="soil_type" name="soil_type" required>
+                                    <option value="">Select Soil Type</option>
+                                    <option value="clay">Clay Soil</option>
+                                    <option value="sandy">Sandy Soil</option>
+                                    <option value="loamy">Loamy Soil (Best for most crops)</option>
+                                    <option value="silt">Silt Soil</option>
+                                    <option value="red">Red Soil</option>
+                                    <option value="black">Black Cotton Soil</option>
+                                    <option value="alluvial">Alluvial Soil</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="field_size" class="form-label">Field Size (hectares)</label>
+                                <input type="number" class="form-control" id="field_size" name="field_size" 
+                                       placeholder="e.g., 2.5" min="0.1" max="1000" step="0.1" value="1.0">
+                                <small class="text-muted">Used to calculate total fertilizer quantities</small>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="growth_stage" class="form-label">Current Growth Stage</label>
+                                <select class="form-select" id="growth_stage" name="growth_stage">
+                                    <option value="pre-sowing">Pre-Sowing/Land Preparation</option>
+                                    <option value="sowing">Sowing/Germination</option>
+                                    <option value="vegetative" selected>Vegetative Growth</option>
+                                    <option value="flowering">Flowering/Reproductive</option>
+                                    <option value="maturity">Maturity/Harvest</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="ph_level" class="form-label">Soil pH (if known)</label>
+                                <select class="form-select" id="ph_level" name="ph_level">
+                                    <option value="">Unknown</option>
+                                    <option value="acidic">Acidic (< 6.0)</option>
+                                    <option value="slightly_acidic">Slightly Acidic (6.0-6.5)</option>
+                                    <option value="neutral">Neutral (6.5-7.5) - Ideal</option>
+                                    <option value="alkaline">Alkaline (> 7.5)</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                        <div class="alert alert-info">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Quick Tip:</strong> For best results, conduct a soil test to determine exact nutrient levels. 
+                            These recommendations provide general guidelines based on crop requirements and environmental factors.
+                        </div>
+                    
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-success btn-lg px-5">
+                                <i class="fas fa-magic me-2"></i>Generate Recommendation
+                            </button>
+                        </div>
+                    </form>
+                    
+
+                    <!-- Loading indicator -->
+                    <div id="fertilizer-loading" class="loading mt-4">
+                        <div class="spinner-border text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2">Calculating optimal fertilizer mix...</p>
+                    </div>
+
+                    <!-- Result container -->
+                    <div id="fertilizer-result" class="mt-4" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NPK Information Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h3 class="text-plant-primary">Understanding NPK Nutrients</h3>
+                <p class="text-muted">Learn about the essential nutrients your crops need</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-success fs-3 p-3 rounded-circle">N</span>
+                        </div>
+                        <h5>Nitrogen (N)</h5>
+                        <p>Essential for leaf growth, chlorophyll production, and overall plant vigor. Promotes green, healthy foliage.</p>
+                        <small class="text-muted">Deficiency: Yellowing leaves, stunted growth</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-warning fs-3 p-3 rounded-circle">P</span>
+                        </div>
+                        <h5>Phosphorus (P)</h5>
+                        <p>Crucial for root development, flower formation, and seed production. Enhances energy transfer in plants.</p>
+                        <small class="text-muted">Deficiency: Purple leaf edges, poor root growth</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <span class="badge bg-info fs-3 p-3 rounded-circle">K</span>
+                        </div>
+                        <h5>Potassium (K)</h5>
+                        <p>Important for disease resistance, water regulation, and fruit quality. Strengthens plant structure.</p>
+                        <small class="text-muted">Deficiency: Brown leaf margins, weak stems</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

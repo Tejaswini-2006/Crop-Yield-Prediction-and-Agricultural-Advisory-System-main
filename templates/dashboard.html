@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Farmer Dashboard') }} - AgriPredict{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Header Banner -->
+    <div class="card bg-success text-white border-0 rounded-4 shadow-sm mb-4">
+        <div class="card-body p-4 p-md-5">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="fw-bold mb-2">
+                        <i class="fas fa-seedling me-2"></i>{{ _('Welcome back') }}, {{ current_user.name }}!
+                    </h2>
+                    <p class="mb-0 text-white-50">
+                        <i class="fas fa-map-marker-alt me-1"></i> {{ current_user.location }} | {{ _('Smart Agriculture Hub') }}
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="{{ url_for('yield_prediction') }}" class="btn btn-light btn-lg font-semibold text-success shadow-sm">
+                        <i class="fas fa-plus-circle me-1"></i> {{ _('New Advisory Check') }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Advisory Shortcuts -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <a href="{{ url_for('yield_prediction') }}" class="text-decoration-none">
+                <div class="card border-0 shadow-sm rounded-3 h-100 hover-lift bg-white">
+                    <div class="card-body text-center p-3">
+                        <i class="fas fa-chart-line fa-2x text-success mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">{{ _('Yield Predictor') }}</h6>
+                        <small class="text-muted">{{ _('Calculate ton/ha outputs') }}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="{{ url_for('fertilizer_recommendation') }}" class="text-decoration-none">
+                <div class="card border-0 shadow-sm rounded-3 h-100 hover-lift bg-white">
+                    <div class="card-body text-center p-3">
+                        <i class="fas fa-flask fa-2x text-warning mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">{{ _('NPK Fertilizer') }}</h6>
+                        <small class="text-muted">{{ _('Get optimal dosages') }}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="{{ url_for('disease_prediction') }}" class="text-decoration-none">
+                <div class="card border-0 shadow-sm rounded-3 h-100 hover-lift bg-white">
+                    <div class="card-body text-center p-3">
+                        <i class="fas fa-bug fa-2x text-danger mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">{{ _('Disease Risk') }}</h6>
+                        <small class="text-muted">{{ _('Assess environmental risk') }}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="{{ url_for('leaf_disease_detection') }}" class="text-decoration-none">
+                <div class="card border-0 shadow-sm rounded-3 h-100 hover-lift bg-white">
+                    <div class="card-body text-center p-3">
+                        <i class="fas fa-camera fa-2x text-info mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">{{ _('Leaf Photo Scanner') }}</h6>
+                        <small class="text-muted">{{ _('Upload leaf diagnosis') }}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Prediction History Section -->
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+            <h5 class="fw-bold mb-0 text-success">
+                <i class="fas fa-history me-2"></i>{{ _('Your Saved Advisory & Prediction History') }}
+            </h5>
+            <span class="badge bg-success rounded-pill px-3 py-2">{{ history_items|length }} {{ _('Records') }}</span>
+        </div>
+        <div class="card-body p-0">
+            {% if history_items %}
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">{{ _('Date & Time') }}</th>
+                                <th>{{ _('Advisory Type') }}</th>
+                                <th>{{ _('Title / Details') }}</th>
+                                <th>{{ _('Actions') }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in history_items %}
+                                <tr>
+                                    <td class="ps-4">
+                                        <small class="text-muted">{{ item.created_at.strftime('%Y-%m-%d %H:%M') }}</small>
+                                    </td>
+                                    <td>
+                                        {% if item.prediction_type == 'yield' %}
+                                            <span class="badge bg-success"><i class="fas fa-chart-line me-1"></i>Yield</span>
+                                        {% elif item.prediction_type == 'disease' %}
+                                            <span class="badge bg-danger"><i class="fas fa-bug me-1"></i>Disease</span>
+                                        {% elif item.prediction_type == 'fertilizer' %}
+                                            <span class="badge bg-warning text-dark"><i class="fas fa-flask me-1"></i>Fertilizer</span>
+                                        {% elif item.prediction_type == 'crop' %}
+                                            <span class="badge bg-primary"><i class="fas fa-seedling me-1"></i>Crop Rec</span>
+                                        {% else %}
+                                            <span class="badge bg-info text-dark"><i class="fas fa-leaf me-1"></i>Leaf Scanner</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        <div class="fw-semibold text-dark">{{ item.title }}</div>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('export_pdf', history_id=item.id) }}" class="btn btn-sm btn-outline-success me-2" title="Download PDF Report">
+                                            <i class="fas fa-file-pdf me-1"></i> {{ _('PDF Report') }}
+                                        </a>
+                                        <form method="POST" action="{{ url_for('delete_history', history_id=item.id) }}" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
+                                            <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete History">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="text-center py-5">
+                    <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
+                    <p class="text-muted mb-2">{{ _('No prediction history recorded yet.') }}</p>
+                    <a href="{{ url_for('yield_prediction') }}" class="btn btn-success font-semibold">
+                        {{ _('Run Your First Yield Check') }}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
